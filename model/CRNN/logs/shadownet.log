@@ -1,0 +1,550 @@
+INFO: 04-04 18:05:51: train_shadownet.py:61 * 140096229574464 Tensor("shuffle_batch/TakeManySparseFromTensorsMap:0", shape=(?, 2), dtype=int64)
+INFO: 04-04 18:05:51: train_shadownet.py:62 * 140096229574464 <class 'tensorflow.python.framework.sparse_tensor.SparseTensor'>
+INFO: 04-04 18:05:51: train_shadownet.py:68 * 140096229574464 SparseTensor(indices=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:0", shape=(?, 2), dtype=int64), values=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:1", shape=(?,), dtype=int32), dense_shape=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:2", shape=(2,), dtype=int64))
+INFO: 04-04 18:05:53: train_shadownet.py:119 * 140096229574464 Training from scratch
+INFO: 04-04 18:10:41: train_shadownet.py:187 * 140096229574464 Epoch: 1 cost= 850.631287 seq distance=  3.112404 train accuracy=  0.008419
+INFO: 04-04 18:10:52: train_shadownet.py:187 * 140096229574464 Epoch: 2 cost= 354.857666 seq distance=  0.950576 train accuracy=  0.010143
+INFO: 04-04 18:11:13: train_shadownet.py:187 * 140096229574464 Epoch: 3 cost= 433.322418 seq distance=  1.000000 train accuracy=  0.000000
+INFO: 04-04 18:11:29: train_shadownet.py:187 * 140096229574464 Epoch: 4 cost= 516.514404 seq distance=  1.727411 train accuracy=  0.099760
+INFO: 04-04 18:11:46: train_shadownet.py:187 * 140096229574464 Epoch: 5 cost= 295.296173 seq distance=  0.978289 train accuracy=  0.000000
+INFO: 04-04 18:11:56: train_shadownet.py:187 * 140096229574464 Epoch: 6 cost= 267.394836 seq distance=  1.004477 train accuracy=  0.057999
+INFO: 04-04 18:12:11: train_shadownet.py:187 * 140096229574464 Epoch: 7 cost= 273.352325 seq distance=  0.994487 train accuracy=  0.000000
+INFO: 04-04 18:12:20: train_shadownet.py:187 * 140096229574464 Epoch: 8 cost= 243.973999 seq distance=  0.852717 train accuracy=  0.019082
+INFO: 04-04 18:12:43: train_shadownet.py:187 * 140096229574464 Epoch: 9 cost= 214.295258 seq distance=  0.881079 train accuracy=  0.015251
+INFO: 04-04 18:12:52: train_shadownet.py:187 * 140096229574464 Epoch: 10 cost= 183.709686 seq distance=  0.855570 train accuracy=  0.019191
+INFO: 04-04 18:13:09: train_shadownet.py:187 * 140096229574464 Epoch: 11 cost= 224.089005 seq distance=  0.903240 train accuracy=  0.011637
+INFO: 04-04 18:13:15: train_shadownet.py:187 * 140096229574464 Epoch: 12 cost= 223.919250 seq distance=  0.803689 train accuracy=  0.038144
+INFO: 04-04 18:13:22: train_shadownet.py:187 * 140096229574464 Epoch: 13 cost= 214.375305 seq distance=  0.900898 train accuracy=  0.010297
+INFO: 04-04 18:13:42: train_shadownet.py:187 * 140096229574464 Epoch: 14 cost= 206.730637 seq distance=  0.814561 train accuracy=  0.041200
+INFO: 04-04 18:14:30: train_shadownet.py:187 * 140096229574464 Epoch: 15 cost= 195.764038 seq distance=  0.891170 train accuracy=  0.018097
+INFO: 04-04 18:20:56: train_shadownet.py:68 * 139747989886784 XSparseTensor(indices=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:0", shape=(?, 2), dtype=int64), values=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:1", shape=(?,), dtype=int32), dense_shape=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:2", shape=(2,), dtype=int64))
+INFO: 04-04 18:20:57: train_shadownet.py:119 * 139747989886784 Training from scratch
+INFO: 04-04 18:25:37: train_shadownet.py:187 * 139747989886784 Epoch: 1 cost= 850.910645 seq distance=  3.375442 train accuracy=  0.008982
+INFO: 04-04 18:25:51: train_shadownet.py:187 * 139747989886784 Epoch: 2 cost= 484.996216 seq distance=  1.429232 train accuracy=  0.029944
+INFO: 04-04 18:26:04: train_shadownet.py:187 * 139747989886784 Epoch: 3 cost= 415.107391 seq distance=  1.000000 train accuracy=  0.000000
+INFO: 04-04 18:26:22: train_shadownet.py:187 * 139747989886784 Epoch: 4 cost= 507.393829 seq distance=  1.532133 train accuracy=  0.091052
+INFO: 04-04 21:25:34: train_shadownet.py:70 * 140049510283072 XTensor("Print:0", shape=(?, ?), dtype=int32)
+INFO: 04-04 21:30:45: train_shadownet.py:70 * 139697141040960 Tensor("Print_1:0", shape=(?, ?), dtype=int32)
+INFO: 04-04 21:30:45: train_shadownet.py:71 * 139697141040960 XSparseTensor(indices=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:0", shape=(?, 2), dtype=int64), values=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:1", shape=(?,), dtype=int32), dense_shape=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:2", shape=(2,), dtype=int64))
+INFO: 04-04 21:30:46: train_shadownet.py:122 * 139697141040960 Training from scratch
+INFO: 04-04 21:47:45: train_shadownet.py:70 * 139834896041792 Tensor("Print_1:0", shape=(?, ?), dtype=int32)
+INFO: 04-04 21:47:45: train_shadownet.py:71 * 139834896041792 XSparseTensor(indices=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:0", shape=(?, 2), dtype=int64), values=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:1", shape=(?,), dtype=int32), dense_shape=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:2", shape=(2,), dtype=int64))
+INFO: 04-04 21:47:45: train_shadownet.py:122 * 139834896041792 Training from scratch
+INFO: 04-04 21:51:06: train_shadownet.py:193 * 139834896041792 Epoch: 1 cost= 872.327881 seq distance=  3.916240 train accuracy=  0.000723
+INFO: 04-04 21:51:24: train_shadownet.py:193 * 139834896041792 Epoch: 2 cost= 536.469971 seq distance=  2.369163 train accuracy=  0.062398
+INFO: 04-04 21:51:33: train_shadownet.py:193 * 139834896041792 Epoch: 3 cost= 355.217834 seq distance=  0.948669 train accuracy=  0.017795
+INFO: 04-04 22:10:18: train_shadownet.py:70 * 140573715781440 Tensor("Print_1:0", shape=(?, ?), dtype=int32)
+INFO: 04-04 22:10:18: train_shadownet.py:71 * 140573715781440 XSparseTensor(indices=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:0", shape=(?, 2), dtype=int64), values=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:1", shape=(?,), dtype=int32), dense_shape=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:2", shape=(2,), dtype=int64))
+INFO: 04-04 22:10:19: train_shadownet.py:122 * 140573715781440 Training from scratch
+INFO: 04-04 22:15:11: train_shadownet.py:195 * 140573715781440 Epoch: 1 cost= 835.982300 seq distance=  2.935043 train accuracy=  0.010841
+INFO: 04-04 22:15:42: train_shadownet.py:195 * 140573715781440 Epoch: 2 cost= 508.132874 seq distance=  1.929697 train accuracy=  0.082112
+INFO: 04-04 22:17:08: train_shadownet.py:195 * 140573715781440 Epoch: 3 cost= 367.865723 seq distance=  0.902779 train accuracy=  0.024216
+INFO: 04-04 22:17:11: train_shadownet.py:195 * 140573715781440 Epoch: 4 cost= 351.479492 seq distance=  0.832363 train accuracy=  0.049897
+INFO: 04-04 22:18:24: train_shadownet.py:195 * 140573715781440 Epoch: 5 cost= 411.579956 seq distance=  1.000000 train accuracy=  0.000000
+INFO: 04-04 22:19:04: train_shadownet.py:195 * 140573715781440 Epoch: 6 cost= 271.978333 seq distance=  0.825860 train accuracy=  0.051759
+INFO: 04-04 22:19:26: train_shadownet.py:195 * 140573715781440 Epoch: 7 cost= 308.686615 seq distance=  1.000000 train accuracy=  0.000000
+INFO: 04-04 22:19:45: train_shadownet.py:195 * 140573715781440 Epoch: 8 cost= 216.740112 seq distance=  0.858153 train accuracy=  0.051316
+INFO: 04-04 22:19:52: train_shadownet.py:195 * 140573715781440 Epoch: 9 cost= 295.031097 seq distance=  0.960536 train accuracy=  0.000000
+INFO: 04-04 22:20:00: train_shadownet.py:195 * 140573715781440 Epoch: 10 cost= 231.195221 seq distance=  0.924754 train accuracy=  0.070351
+INFO: 04-04 22:20:13: train_shadownet.py:195 * 140573715781440 Epoch: 11 cost= 253.180756 seq distance=  0.955751 train accuracy=  0.000694
+INFO: 04-04 22:20:28: train_shadownet.py:195 * 140573715781440 Epoch: 12 cost= 219.114990 seq distance=  0.843081 train accuracy=  0.030970
+INFO: 04-04 22:20:38: train_shadownet.py:195 * 140573715781440 Epoch: 13 cost= 228.204498 seq distance=  0.881021 train accuracy=  0.016596
+INFO: 04-04 22:20:56: train_shadownet.py:195 * 140573715781440 Epoch: 14 cost= 195.373352 seq distance=  0.832655 train accuracy=  0.035453
+INFO: 04-04 22:21:35: train_shadownet.py:195 * 140573715781440 Epoch: 15 cost= 217.117889 seq distance=  0.902809 train accuracy=  0.014467
+INFO: 04-04 22:23:20: train_shadownet.py:195 * 140573715781440 Epoch: 16 cost= 190.622284 seq distance=  0.823586 train accuracy=  0.030620
+INFO: 04-04 22:23:26: train_shadownet.py:195 * 140573715781440 Epoch: 17 cost= 226.884155 seq distance=  0.868505 train accuracy=  0.017789
+INFO: 04-04 22:23:32: train_shadownet.py:195 * 140573715781440 Epoch: 18 cost= 221.316833 seq distance=  0.800205 train accuracy=  0.047714
+INFO: 04-04 22:23:35: train_shadownet.py:195 * 140573715781440 Epoch: 19 cost= 223.329498 seq distance=  0.866733 train accuracy=  0.014609
+INFO: 04-04 22:23:55: train_shadownet.py:195 * 140573715781440 Epoch: 20 cost= 186.378754 seq distance=  0.813266 train accuracy=  0.033568
+INFO: 04-04 22:24:06: train_shadownet.py:195 * 140573715781440 Epoch: 21 cost= 224.372864 seq distance=  0.891872 train accuracy=  0.011310
+INFO: 04-04 22:24:07: train_shadownet.py:195 * 140573715781440 Epoch: 22 cost= 203.757202 seq distance=  0.801849 train accuracy=  0.043232
+INFO: 04-04 22:24:13: train_shadownet.py:195 * 140573715781440 Epoch: 23 cost= 208.123932 seq distance=  0.872820 train accuracy=  0.021017
+INFO: 04-04 22:24:19: train_shadownet.py:195 * 140573715781440 Epoch: 24 cost= 204.020935 seq distance=  0.813690 train accuracy=  0.032913
+INFO: 04-04 22:24:26: train_shadownet.py:195 * 140573715781440 Epoch: 25 cost= 183.297516 seq distance=  0.869754 train accuracy=  0.018174
+INFO: 04-04 22:24:37: train_shadownet.py:195 * 140573715781440 Epoch: 26 cost= 196.242126 seq distance=  0.827947 train accuracy=  0.032237
+INFO: 04-04 22:24:50: train_shadownet.py:195 * 140573715781440 Epoch: 27 cost= 191.576462 seq distance=  0.840898 train accuracy=  0.029477
+INFO: 04-04 22:25:04: train_shadownet.py:195 * 140573715781440 Epoch: 28 cost= 211.372101 seq distance=  0.853374 train accuracy=  0.019019
+INFO: 04-04 22:25:19: train_shadownet.py:195 * 140573715781440 Epoch: 29 cost= 206.177307 seq distance=  0.829174 train accuracy=  0.031711
+INFO: 04-04 22:25:52: train_shadownet.py:195 * 140573715781440 Epoch: 30 cost= 206.549500 seq distance=  0.846702 train accuracy=  0.018916
+INFO: 04-04 22:25:59: train_shadownet.py:195 * 140573715781440 Epoch: 31 cost= 171.537323 seq distance=  0.804200 train accuracy=  0.035170
+INFO: 04-04 22:26:08: train_shadownet.py:195 * 140573715781440 Epoch: 32 cost= 202.809891 seq distance=  0.874135 train accuracy=  0.012206
+INFO: 04-04 22:26:29: train_shadownet.py:195 * 140573715781440 Epoch: 33 cost= 208.079971 seq distance=  0.795631 train accuracy=  0.041728
+INFO: 04-04 22:26:37: train_shadownet.py:195 * 140573715781440 Epoch: 34 cost= 196.773651 seq distance=  0.875861 train accuracy=  0.015053
+INFO: 04-04 22:27:10: train_shadownet.py:195 * 140573715781440 Epoch: 35 cost= 198.473480 seq distance=  0.800972 train accuracy=  0.039657
+INFO: 04-04 22:27:20: train_shadownet.py:195 * 140573715781440 Epoch: 36 cost= 198.936478 seq distance=  0.846459 train accuracy=  0.020524
+INFO: 04-04 22:27:48: train_shadownet.py:195 * 140573715781440 Epoch: 37 cost= 210.448547 seq distance=  0.825760 train accuracy=  0.027799
+INFO: 04-04 22:27:57: train_shadownet.py:195 * 140573715781440 Epoch: 38 cost= 192.222565 seq distance=  0.842995 train accuracy=  0.020225
+INFO: 04-04 22:28:21: train_shadownet.py:195 * 140573715781440 Epoch: 39 cost= 209.873260 seq distance=  0.824064 train accuracy=  0.027146
+INFO: 04-04 22:28:25: train_shadownet.py:195 * 140573715781440 Epoch: 40 cost= 185.374939 seq distance=  0.814055 train accuracy=  0.030175
+INFO: 04-04 22:28:42: train_shadownet.py:195 * 140573715781440 Epoch: 41 cost= 220.248260 seq distance=  0.857384 train accuracy=  0.021191
+INFO: 04-04 22:28:46: train_shadownet.py:195 * 140573715781440 Epoch: 42 cost= 201.229736 seq distance=  0.784156 train accuracy=  0.053975
+INFO: 04-04 22:28:55: train_shadownet.py:195 * 140573715781440 Epoch: 43 cost= 205.107819 seq distance=  0.846310 train accuracy=  0.027973
+INFO: 04-04 22:29:05: train_shadownet.py:195 * 140573715781440 Epoch: 44 cost= 221.778702 seq distance=  0.779011 train accuracy=  0.049187
+INFO: 04-04 22:29:40: train_shadownet.py:195 * 140573715781440 Epoch: 45 cost= 211.182358 seq distance=  0.834630 train accuracy=  0.024746
+INFO: 04-04 22:29:43: train_shadownet.py:195 * 140573715781440 Epoch: 46 cost= 181.670197 seq distance=  0.814896 train accuracy=  0.037973
+INFO: 04-04 22:29:57: train_shadownet.py:195 * 140573715781440 Epoch: 47 cost= 199.042938 seq distance=  0.871591 train accuracy=  0.017874
+INFO: 04-04 22:30:03: train_shadownet.py:195 * 140573715781440 Epoch: 48 cost= 163.844666 seq distance=  0.778286 train accuracy=  0.072641
+INFO: 04-04 22:30:14: train_shadownet.py:195 * 140573715781440 Epoch: 49 cost= 208.200653 seq distance=  0.884910 train accuracy=  0.017882
+INFO: 04-04 22:30:16: train_shadownet.py:195 * 140573715781440 Epoch: 50 cost= 213.384415 seq distance=  0.790799 train accuracy=  0.041664
+INFO: 04-04 22:30:20: train_shadownet.py:195 * 140573715781440 Epoch: 51 cost= 201.490967 seq distance=  0.871805 train accuracy=  0.025367
+INFO: 04-04 22:30:21: train_shadownet.py:195 * 140573715781440 Epoch: 52 cost= 211.121460 seq distance=  0.816688 train accuracy=  0.032947
+INFO: 04-04 22:30:36: train_shadownet.py:195 * 140573715781440 Epoch: 53 cost= 209.180710 seq distance=  0.826298 train accuracy=  0.026134
+INFO: 04-04 22:30:37: train_shadownet.py:195 * 140573715781440 Epoch: 54 cost= 186.843506 seq distance=  0.827551 train accuracy=  0.031758
+INFO: 04-04 22:30:46: train_shadownet.py:195 * 140573715781440 Epoch: 55 cost= 187.781952 seq distance=  0.857100 train accuracy=  0.028189
+INFO: 04-04 22:30:49: train_shadownet.py:195 * 140573715781440 Epoch: 56 cost= 197.983948 seq distance=  0.828583 train accuracy=  0.036950
+INFO: 04-04 22:30:58: train_shadownet.py:195 * 140573715781440 Epoch: 57 cost= 181.372620 seq distance=  0.836173 train accuracy=  0.026801
+INFO: 04-04 22:31:14: train_shadownet.py:195 * 140573715781440 Epoch: 58 cost= 215.013977 seq distance=  0.829486 train accuracy=  0.027729
+INFO: 04-04 22:31:16: train_shadownet.py:195 * 140573715781440 Epoch: 59 cost= 182.008942 seq distance=  0.792678 train accuracy=  0.049748
+INFO: 04-04 22:31:23: train_shadownet.py:195 * 140573715781440 Epoch: 60 cost= 191.061050 seq distance=  0.867016 train accuracy=  0.022624
+INFO: 04-04 22:31:40: train_shadownet.py:195 * 140573715781440 Epoch: 61 cost= 213.489685 seq distance=  0.823900 train accuracy=  0.028644
+INFO: 04-04 22:31:44: train_shadownet.py:195 * 140573715781440 Epoch: 62 cost= 197.409485 seq distance=  0.824905 train accuracy=  0.029732
+INFO: 04-04 22:31:45: train_shadownet.py:195 * 140573715781440 Epoch: 63 cost= 177.022766 seq distance=  0.794333 train accuracy=  0.041576
+INFO: 04-04 22:31:56: train_shadownet.py:195 * 140573715781440 Epoch: 64 cost= 206.416275 seq distance=  0.854063 train accuracy=  0.023119
+INFO: 04-04 22:32:15: train_shadownet.py:195 * 140573715781440 Epoch: 65 cost= 191.856171 seq distance=  0.804364 train accuracy=  0.043163
+INFO: 04-04 22:32:19: train_shadownet.py:195 * 140573715781440 Epoch: 66 cost= 189.790939 seq distance=  0.841826 train accuracy=  0.022860
+INFO: 04-04 22:32:33: train_shadownet.py:195 * 140573715781440 Epoch: 67 cost= 193.716400 seq distance=  0.803648 train accuracy=  0.035637
+INFO: 04-04 22:32:47: train_shadownet.py:195 * 140573715781440 Epoch: 68 cost= 192.121552 seq distance=  0.854523 train accuracy=  0.018926
+INFO: 04-04 22:32:48: train_shadownet.py:195 * 140573715781440 Epoch: 69 cost= 192.452713 seq distance=  0.782226 train accuracy=  0.051856
+INFO: 04-04 22:32:50: train_shadownet.py:195 * 140573715781440 Epoch: 70 cost= 169.113007 seq distance=  0.843786 train accuracy=  0.034360
+INFO: 04-04 22:33:04: train_shadownet.py:195 * 140573715781440 Epoch: 71 cost= 201.939026 seq distance=  0.865752 train accuracy=  0.027271
+INFO: 04-04 22:33:05: train_shadownet.py:195 * 140573715781440 Epoch: 72 cost= 185.180603 seq distance=  0.812757 train accuracy=  0.065883
+INFO: 04-04 22:33:07: train_shadownet.py:195 * 140573715781440 Epoch: 73 cost= 228.407623 seq distance=  0.884030 train accuracy=  0.013959
+INFO: 04-04 22:33:12: train_shadownet.py:195 * 140573715781440 Epoch: 74 cost= 215.178131 seq distance=  0.752011 train accuracy=  0.067662
+INFO: 04-04 22:33:14: train_shadownet.py:195 * 140573715781440 Epoch: 75 cost= 231.607422 seq distance=  0.876170 train accuracy=  0.016133
+INFO: 04-04 22:33:17: train_shadownet.py:195 * 140573715781440 Epoch: 76 cost= 230.750412 seq distance=  0.745070 train accuracy=  0.060551
+INFO: 04-04 22:33:18: train_shadownet.py:195 * 140573715781440 Epoch: 77 cost= 199.268707 seq distance=  0.862946 train accuracy=  0.017931
+INFO: 04-04 22:33:23: train_shadownet.py:195 * 140573715781440 Epoch: 78 cost= 185.284393 seq distance=  0.807281 train accuracy=  0.051656
+INFO: 04-04 22:33:30: train_shadownet.py:195 * 140573715781440 Epoch: 79 cost= 190.556061 seq distance=  0.825366 train accuracy=  0.023275
+INFO: 04-04 22:33:44: train_shadownet.py:195 * 140573715781440 Epoch: 80 cost= 173.521591 seq distance=  0.790767 train accuracy=  0.061273
+INFO: 04-04 22:33:45: train_shadownet.py:195 * 140573715781440 Epoch: 81 cost= 219.800568 seq distance=  0.851130 train accuracy=  0.025516
+INFO: 04-04 22:33:56: train_shadownet.py:195 * 140573715781440 Epoch: 82 cost= 181.347809 seq distance=  0.777417 train accuracy=  0.055173
+INFO: 04-04 22:34:02: train_shadownet.py:195 * 140573715781440 Epoch: 83 cost= 200.267303 seq distance=  0.842723 train accuracy=  0.018767
+INFO: 04-04 22:34:04: train_shadownet.py:195 * 140573715781440 Epoch: 84 cost= 203.562393 seq distance=  0.753327 train accuracy=  0.058422
+INFO: 04-04 22:34:05: train_shadownet.py:195 * 140573715781440 Epoch: 85 cost= 189.402405 seq distance=  0.812886 train accuracy=  0.033752
+INFO: 04-04 22:34:20: train_shadownet.py:195 * 140573715781440 Epoch: 86 cost= 203.872467 seq distance=  0.780393 train accuracy=  0.035406
+INFO: 04-04 22:34:31: train_shadownet.py:195 * 140573715781440 Epoch: 87 cost= 191.411041 seq distance=  0.851110 train accuracy=  0.043117
+INFO: 04-04 22:34:51: train_shadownet.py:195 * 140573715781440 Epoch: 88 cost= 209.651215 seq distance=  0.860301 train accuracy=  0.040208
+INFO: 04-04 22:35:01: train_shadownet.py:195 * 140573715781440 Epoch: 89 cost= 226.965515 seq distance=  0.897477 train accuracy=  0.017298
+INFO: 04-04 22:35:02: train_shadownet.py:195 * 140573715781440 Epoch: 90 cost= 197.756241 seq distance=  0.750601 train accuracy=  0.072629
+INFO: 04-04 22:35:09: train_shadownet.py:195 * 140573715781440 Epoch: 91 cost= 221.824539 seq distance=  0.870035 train accuracy=  0.012343
+INFO: 04-04 22:35:12: train_shadownet.py:195 * 140573715781440 Epoch: 92 cost= 176.390579 seq distance=  0.760760 train accuracy=  0.058107
+INFO: 04-04 22:35:15: train_shadownet.py:195 * 140573715781440 Epoch: 93 cost= 207.064789 seq distance=  0.823826 train accuracy=  0.028419
+INFO: 04-04 22:35:16: train_shadownet.py:195 * 140573715781440 Epoch: 94 cost= 194.464890 seq distance=  0.760678 train accuracy=  0.053887
+INFO: 04-04 22:35:22: train_shadownet.py:195 * 140573715781440 Epoch: 95 cost= 188.895233 seq distance=  0.801611 train accuracy=  0.031830
+INFO: 04-04 22:35:42: train_shadownet.py:195 * 140573715781440 Epoch: 96 cost= 208.047333 seq distance=  0.788251 train accuracy=  0.038584
+INFO: 04-04 22:35:57: train_shadownet.py:195 * 140573715781440 Epoch: 97 cost= 169.110229 seq distance=  0.823452 train accuracy=  0.026254
+INFO: 04-04 22:36:41: train_shadownet.py:195 * 140573715781440 Epoch: 98 cost= 198.586639 seq distance=  0.782333 train accuracy=  0.047599
+INFO: 04-04 22:36:56: train_shadownet.py:195 * 140573715781440 Epoch: 99 cost= 190.417542 seq distance=  0.793460 train accuracy=  0.039575
+INFO: 04-04 22:36:58: train_shadownet.py:195 * 140573715781440 Epoch: 100 cost= 197.331818 seq distance=  0.812621 train accuracy=  0.033129
+INFO: 04-04 22:36:59: train_shadownet.py:195 * 140573715781440 Epoch: 101 cost= 189.783203 seq distance=  0.781865 train accuracy=  0.043155
+INFO: 04-04 22:37:01: train_shadownet.py:195 * 140573715781440 Epoch: 102 cost= 188.985596 seq distance=  0.797095 train accuracy=  0.033663
+INFO: 04-04 22:37:02: train_shadownet.py:195 * 140573715781440 Epoch: 103 cost= 165.739044 seq distance=  0.799336 train accuracy=  0.040082
+INFO: 04-04 22:37:10: train_shadownet.py:195 * 140573715781440 Epoch: 104 cost= 213.686417 seq distance=  0.797382 train accuracy=  0.028036
+INFO: 04-04 22:37:18: train_shadownet.py:195 * 140573715781440 Epoch: 105 cost= 182.903046 seq distance=  0.776143 train accuracy=  0.043141
+INFO: 04-04 22:37:22: train_shadownet.py:195 * 140573715781440 Epoch: 106 cost= 186.140259 seq distance=  0.802078 train accuracy=  0.028071
+INFO: 04-04 22:37:24: train_shadownet.py:195 * 140573715781440 Epoch: 107 cost= 188.010864 seq distance=  0.759291 train accuracy=  0.063894
+INFO: 04-04 22:37:26: train_shadownet.py:195 * 140573715781440 Epoch: 108 cost= 194.154358 seq distance=  0.806720 train accuracy=  0.025917
+INFO: 04-04 22:37:30: train_shadownet.py:195 * 140573715781440 Epoch: 109 cost= 197.595322 seq distance=  0.751034 train accuracy=  0.051550
+INFO: 04-04 22:37:31: train_shadownet.py:195 * 140573715781440 Epoch: 110 cost= 192.212006 seq distance=  0.816671 train accuracy=  0.037579
+INFO: 04-04 22:37:41: train_shadownet.py:195 * 140573715781440 Epoch: 111 cost= 205.045074 seq distance=  0.774288 train accuracy=  0.047907
+INFO: 04-04 22:37:46: train_shadownet.py:195 * 140573715781440 Epoch: 112 cost= 190.459015 seq distance=  0.802592 train accuracy=  0.042014
+INFO: 04-04 22:37:51: train_shadownet.py:195 * 140573715781440 Epoch: 113 cost= 182.281433 seq distance=  0.752942 train accuracy=  0.046584
+INFO: 04-04 22:37:52: train_shadownet.py:195 * 140573715781440 Epoch: 114 cost= 224.570587 seq distance=  0.831251 train accuracy=  0.021081
+INFO: 04-04 22:37:57: train_shadownet.py:195 * 140573715781440 Epoch: 115 cost= 175.343246 seq distance=  0.766279 train accuracy=  0.058616
+INFO: 04-04 22:38:09: train_shadownet.py:195 * 140573715781440 Epoch: 116 cost= 156.122498 seq distance=  0.882947 train accuracy=  0.013112
+INFO: 04-04 22:38:11: train_shadownet.py:195 * 140573715781440 Epoch: 117 cost= 205.973541 seq distance=  0.787230 train accuracy=  0.043063
+INFO: 04-04 22:38:17: train_shadownet.py:195 * 140573715781440 Epoch: 118 cost= 190.127594 seq distance=  0.776222 train accuracy=  0.035447
+INFO: 04-04 22:38:18: train_shadownet.py:195 * 140573715781440 Epoch: 119 cost= 208.922562 seq distance=  0.791795 train accuracy=  0.036184
+INFO: 04-04 22:38:34: train_shadownet.py:195 * 140573715781440 Epoch: 120 cost= 187.997223 seq distance=  0.780693 train accuracy=  0.044719
+INFO: 04-04 22:38:35: train_shadownet.py:195 * 140573715781440 Epoch: 121 cost= 193.059158 seq distance=  0.781533 train accuracy=  0.039344
+INFO: 04-04 22:38:48: train_shadownet.py:195 * 140573715781440 Epoch: 122 cost= 198.957458 seq distance=  0.768131 train accuracy=  0.035560
+INFO: 04-04 22:38:52: train_shadownet.py:195 * 140573715781440 Epoch: 123 cost= 189.612503 seq distance=  0.807260 train accuracy=  0.025178
+INFO: 04-04 22:39:20: train_shadownet.py:195 * 140573715781440 Epoch: 124 cost= 193.507385 seq distance=  0.767558 train accuracy=  0.051111
+INFO: 04-04 22:39:32: train_shadownet.py:195 * 140573715781440 Epoch: 125 cost= 178.320023 seq distance=  0.816505 train accuracy=  0.028445
+INFO: 04-04 22:39:42: train_shadownet.py:195 * 140573715781440 Epoch: 126 cost= 186.217560 seq distance=  0.777002 train accuracy=  0.053897
+INFO: 04-04 22:39:49: train_shadownet.py:195 * 140573715781440 Epoch: 127 cost= 186.079147 seq distance=  0.776752 train accuracy=  0.038441
+INFO: 04-04 22:39:59: train_shadownet.py:195 * 140573715781440 Epoch: 128 cost= 178.205322 seq distance=  0.780572 train accuracy=  0.033763
+INFO: 04-04 22:40:11: train_shadownet.py:195 * 140573715781440 Epoch: 129 cost= 152.027039 seq distance=  0.790475 train accuracy=  0.034201
+INFO: 04-04 22:40:20: train_shadownet.py:195 * 140573715781440 Epoch: 130 cost= 170.353867 seq distance=  0.781993 train accuracy=  0.031955
+INFO: 04-04 22:40:44: train_shadownet.py:195 * 140573715781440 Epoch: 131 cost= 167.513428 seq distance=  0.755232 train accuracy=  0.056479
+INFO: 04-04 22:40:59: train_shadownet.py:195 * 140573715781440 Epoch: 132 cost= 153.799973 seq distance=  0.798227 train accuracy=  0.038110
+INFO: 04-04 22:41:25: train_shadownet.py:195 * 140573715781440 Epoch: 133 cost= 182.522141 seq distance=  0.772512 train accuracy=  0.042452
+INFO: 04-04 22:41:43: train_shadownet.py:195 * 140573715781440 Epoch: 134 cost= 159.265686 seq distance=  0.773470 train accuracy=  0.045400
+INFO: 04-04 22:41:57: train_shadownet.py:195 * 140573715781440 Epoch: 135 cost= 184.346176 seq distance=  0.786627 train accuracy=  0.034330
+INFO: 04-04 22:42:10: train_shadownet.py:195 * 140573715781440 Epoch: 136 cost= 177.875412 seq distance=  0.747539 train accuracy=  0.049483
+INFO: 04-04 22:42:15: train_shadownet.py:195 * 140573715781440 Epoch: 137 cost= 203.273468 seq distance=  0.806362 train accuracy=  0.032815
+INFO: 04-04 22:42:17: train_shadownet.py:195 * 140573715781440 Epoch: 138 cost= 180.527588 seq distance=  0.749513 train accuracy=  0.059383
+INFO: 04-04 22:42:20: train_shadownet.py:195 * 140573715781440 Epoch: 139 cost= 187.554382 seq distance=  0.831215 train accuracy=  0.025695
+INFO: 04-04 22:42:22: train_shadownet.py:195 * 140573715781440 Epoch: 140 cost= 166.760025 seq distance=  0.733046 train accuracy=  0.057683
+INFO: 04-04 22:42:26: train_shadownet.py:195 * 140573715781440 Epoch: 141 cost= 175.889374 seq distance=  0.818715 train accuracy=  0.029093
+INFO: 04-04 22:42:28: train_shadownet.py:195 * 140573715781440 Epoch: 142 cost= 183.684433 seq distance=  0.749917 train accuracy=  0.044274
+INFO: 04-04 22:42:38: train_shadownet.py:195 * 140573715781440 Epoch: 143 cost= 172.339905 seq distance=  0.818575 train accuracy=  0.027975
+INFO: 04-04 22:42:39: train_shadownet.py:195 * 140573715781440 Epoch: 144 cost= 188.921417 seq distance=  0.766672 train accuracy=  0.044549
+INFO: 04-04 22:42:43: train_shadownet.py:195 * 140573715781440 Epoch: 145 cost= 161.997925 seq distance=  0.791635 train accuracy=  0.045011
+INFO: 04-04 22:42:46: train_shadownet.py:195 * 140573715781440 Epoch: 146 cost= 180.302979 seq distance=  0.788871 train accuracy=  0.045710
+INFO: 04-04 22:42:50: train_shadownet.py:195 * 140573715781440 Epoch: 147 cost= 165.003601 seq distance=  0.762977 train accuracy=  0.046281
+INFO: 04-04 22:42:52: train_shadownet.py:195 * 140573715781440 Epoch: 148 cost= 166.696350 seq distance=  0.788429 train accuracy=  0.032615
+INFO: 04-04 22:42:54: train_shadownet.py:195 * 140573715781440 Epoch: 149 cost= 164.707367 seq distance=  0.773315 train accuracy=  0.036130
+INFO: 04-04 22:43:03: train_shadownet.py:195 * 140573715781440 Epoch: 150 cost= 177.615875 seq distance=  0.790303 train accuracy=  0.024165
+INFO: 04-04 22:43:04: train_shadownet.py:195 * 140573715781440 Epoch: 151 cost= 185.234650 seq distance=  0.748718 train accuracy=  0.046821
+INFO: 04-04 22:43:11: train_shadownet.py:195 * 140573715781440 Epoch: 152 cost= 197.001770 seq distance=  0.784569 train accuracy=  0.041727
+INFO: 04-04 22:43:12: train_shadownet.py:195 * 140573715781440 Epoch: 153 cost= 180.136017 seq distance=  0.739529 train accuracy=  0.049320
+INFO: 04-04 22:43:31: train_shadownet.py:195 * 140573715781440 Epoch: 154 cost= 169.553619 seq distance=  0.784756 train accuracy=  0.037807
+INFO: 04-04 22:43:44: train_shadownet.py:195 * 140573715781440 Epoch: 155 cost= 186.662308 seq distance=  0.761417 train accuracy=  0.031703
+INFO: 04-04 22:44:09: train_shadownet.py:195 * 140573715781440 Epoch: 156 cost= 167.482605 seq distance=  0.748812 train accuracy=  0.036873
+INFO: 04-04 22:44:18: train_shadownet.py:195 * 140573715781440 Epoch: 157 cost= 199.656647 seq distance=  0.775889 train accuracy=  0.032500
+INFO: 04-04 22:44:25: train_shadownet.py:195 * 140573715781440 Epoch: 158 cost= 211.708084 seq distance=  0.770173 train accuracy=  0.046738
+INFO: 04-04 22:44:48: train_shadownet.py:195 * 140573715781440 Epoch: 159 cost= 174.347565 seq distance=  0.759935 train accuracy=  0.036668
+INFO: 04-04 22:44:54: train_shadownet.py:195 * 140573715781440 Epoch: 160 cost= 191.583633 seq distance=  0.807968 train accuracy=  0.024315
+INFO: 04-04 22:45:09: train_shadownet.py:195 * 140573715781440 Epoch: 161 cost= 179.982117 seq distance=  0.737643 train accuracy=  0.068927
+INFO: 04-05 22:42:24: train_shadownet.py:78 * 139720204805952 Tensor("Print_1:0", shape=(?, ?), dtype=int32)
+INFO: 04-05 22:42:24: train_shadownet.py:79 * 139720204805952 XSparseTensor(indices=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:0", shape=(?, 2), dtype=int64), values=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:1", shape=(?,), dtype=int32), dense_shape=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:2", shape=(2,), dtype=int64))
+INFO: 04-05 22:42:24: train_shadownet.py:130 * 139720204805952 Training from scratch
+INFO: 04-05 22:48:05: train_shadownet.py:78 * 140510827419456 Tensor("Print_1:0", shape=(?, ?), dtype=int32)
+INFO: 04-05 22:48:05: train_shadownet.py:79 * 140510827419456 XSparseTensor(indices=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:0", shape=(?, 2), dtype=int64), values=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:1", shape=(?,), dtype=int32), dense_shape=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:2", shape=(2,), dtype=int64))
+INFO: 04-05 22:48:06: train_shadownet.py:130 * 140510827419456 Training from scratch
+INFO: 04-05 23:06:26: train_shadownet.py:88 * 139706694866752 Tensor("Print_1:0", shape=(?, ?), dtype=int32)
+INFO: 04-05 23:06:26: train_shadownet.py:89 * 139706694866752 XSparseTensor(indices=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:0", shape=(?, 2), dtype=int64), values=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:1", shape=(?,), dtype=int32), dense_shape=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:2", shape=(2,), dtype=int64))
+INFO: 04-05 23:06:27: train_shadownet.py:140 * 139706694866752 Training from scratch
+INFO: 04-05 23:09:00: train_shadownet.py:256 * 139706694866752 Epoch: 1 cost= 795.567932 seq distance=  3.002573 train accuracy=  0.001538
+INFO: 04-05 23:09:02: train_shadownet.py:256 * 139706694866752 Epoch: 2 cost= 264.724792 seq distance=  0.998201 train accuracy=  0.001481
+INFO: 04-05 23:09:04: train_shadownet.py:256 * 139706694866752 Epoch: 3 cost= 271.625793 seq distance=  0.939219 train accuracy=  0.003327
+INFO: 04-05 23:09:06: train_shadownet.py:256 * 139706694866752 Epoch: 4 cost= 492.172729 seq distance=  2.120144 train accuracy=  0.118854
+INFO: 04-05 23:09:08: train_shadownet.py:256 * 139706694866752 Epoch: 5 cost= 518.050903 seq distance=  0.981538 train accuracy=  0.000000
+INFO: 04-05 23:09:10: train_shadownet.py:256 * 139706694866752 Epoch: 6 cost= 439.817017 seq distance=  1.462022 train accuracy=  0.119401
+INFO: 04-05 23:09:12: train_shadownet.py:256 * 139706694866752 Epoch: 7 cost= 275.200500 seq distance=  0.900187 train accuracy=  0.024597
+INFO: 04-05 23:09:16: train_shadownet.py:256 * 139706694866752 Epoch: 8 cost= 362.586975 seq distance=  2.121456 train accuracy=  0.123613
+INFO: 04-05 23:09:18: train_shadownet.py:256 * 139706694866752 Epoch: 9 cost= 278.779144 seq distance=  1.126637 train accuracy=  0.094564
+INFO: 04-05 23:09:21: train_shadownet.py:256 * 139706694866752 Epoch: 10 cost= 225.614532 seq distance=  0.857625 train accuracy=  0.035092
+INFO: 04-05 23:09:23: train_shadownet.py:256 * 139706694866752 Epoch: 11 cost= 260.555054 seq distance=  0.869047 train accuracy=  0.067572
+INFO: 04-05 23:09:26: train_shadownet.py:256 * 139706694866752 Epoch: 12 cost= 252.939621 seq distance=  0.973985 train accuracy=  0.001945
+INFO: 04-05 23:09:29: train_shadownet.py:256 * 139706694866752 Epoch: 13 cost= 226.004471 seq distance=  0.794736 train accuracy=  0.085125
+INFO: 04-05 23:09:33: train_shadownet.py:256 * 139706694866752 Epoch: 14 cost= 311.650177 seq distance=  0.954433 train accuracy=  0.000386
+INFO: 04-05 23:09:36: train_shadownet.py:256 * 139706694866752 Epoch: 15 cost= 221.479523 seq distance=  0.828374 train accuracy=  0.115295
+INFO: 04-05 23:09:39: train_shadownet.py:256 * 139706694866752 Epoch: 16 cost= 224.121414 seq distance=  0.890339 train accuracy=  0.012104
+INFO: 04-05 23:09:42: train_shadownet.py:256 * 139706694866752 Epoch: 17 cost= 212.787445 seq distance=  0.798187 train accuracy=  0.042606
+INFO: 04-05 23:09:46: train_shadownet.py:256 * 139706694866752 Epoch: 18 cost= 214.091782 seq distance=  0.825117 train accuracy=  0.031916
+INFO: 04-05 23:09:50: train_shadownet.py:256 * 139706694866752 Epoch: 19 cost= 184.581696 seq distance=  0.841887 train accuracy=  0.034562
+INFO: 04-05 23:09:54: train_shadownet.py:256 * 139706694866752 Epoch: 20 cost= 191.281281 seq distance=  0.848035 train accuracy=  0.033552
+INFO: 04-05 23:09:58: train_shadownet.py:256 * 139706694866752 Epoch: 21 cost= 223.863510 seq distance=  0.830145 train accuracy=  0.031102
+INFO: 04-05 23:10:02: train_shadownet.py:256 * 139706694866752 Epoch: 22 cost= 194.574890 seq distance=  0.809235 train accuracy=  0.035883
+INFO: 04-05 23:10:06: train_shadownet.py:256 * 139706694866752 Epoch: 23 cost= 234.785019 seq distance=  0.838309 train accuracy=  0.022394
+INFO: 04-05 23:10:10: train_shadownet.py:256 * 139706694866752 Epoch: 24 cost= 219.914154 seq distance=  0.805267 train accuracy=  0.038905
+INFO: 04-05 23:10:15: train_shadownet.py:256 * 139706694866752 Epoch: 25 cost= 164.929169 seq distance=  0.852559 train accuracy=  0.021196
+INFO: 04-05 23:10:19: train_shadownet.py:256 * 139706694866752 Epoch: 26 cost= 176.906143 seq distance=  0.850298 train accuracy=  0.018952
+INFO: 04-05 23:10:24: train_shadownet.py:256 * 139706694866752 Epoch: 27 cost= 196.505981 seq distance=  0.841039 train accuracy=  0.022052
+INFO: 04-05 23:10:29: train_shadownet.py:256 * 139706694866752 Epoch: 28 cost= 198.447266 seq distance=  0.825075 train accuracy=  0.031409
+INFO: 04-05 23:10:34: train_shadownet.py:256 * 139706694866752 Epoch: 29 cost= 210.164185 seq distance=  0.838810 train accuracy=  0.025429
+INFO: 04-05 23:10:38: train_shadownet.py:256 * 139706694866752 Epoch: 30 cost= 182.935898 seq distance=  0.831792 train accuracy=  0.031142
+INFO: 04-05 23:10:43: train_shadownet.py:256 * 139706694866752 Epoch: 31 cost= 243.359406 seq distance=  0.854747 train accuracy=  0.015072
+INFO: 04-05 23:10:49: train_shadownet.py:256 * 139706694866752 Epoch: 32 cost= 207.898499 seq distance=  0.777019 train accuracy=  0.054398
+INFO: 04-05 23:10:54: train_shadownet.py:256 * 139706694866752 Epoch: 33 cost= 202.995743 seq distance=  0.853008 train accuracy=  0.018984
+INFO: 04-05 23:10:59: train_shadownet.py:256 * 139706694866752 Epoch: 34 cost= 223.161819 seq distance=  0.802776 train accuracy=  0.043758
+INFO: 04-05 23:11:04: train_shadownet.py:256 * 139706694866752 Epoch: 35 cost= 202.938232 seq distance=  0.843392 train accuracy=  0.022644
+INFO: 04-05 23:11:10: train_shadownet.py:256 * 139706694866752 Epoch: 36 cost= 185.035721 seq distance=  0.834868 train accuracy=  0.027710
+INFO: 04-05 23:11:15: train_shadownet.py:256 * 139706694866752 Epoch: 37 cost= 198.109253 seq distance=  0.827290 train accuracy=  0.028655
+INFO: 04-05 23:11:21: train_shadownet.py:256 * 139706694866752 Epoch: 38 cost= 202.936493 seq distance=  0.815945 train accuracy=  0.027726
+INFO: 04-05 23:11:27: train_shadownet.py:256 * 139706694866752 Epoch: 39 cost= 198.053131 seq distance=  0.828541 train accuracy=  0.027091
+INFO: 04-05 23:11:34: train_shadownet.py:256 * 139706694866752 Epoch: 40 cost= 207.200485 seq distance=  0.825846 train accuracy=  0.030714
+INFO: 04-06 01:21:59: train_shadownet.py:88 * 140549237397312 Tensor("Print_1:0", shape=(?, ?), dtype=int32)
+INFO: 04-06 01:21:59: train_shadownet.py:89 * 140549237397312 XSparseTensor(indices=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:0", shape=(?, 2), dtype=int64), values=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:1", shape=(?,), dtype=int32), dense_shape=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:2", shape=(2,), dtype=int64))
+INFO: 04-06 01:22:00: train_shadownet.py:140 * 140549237397312 Training from scratch
+INFO: 04-06 01:23:20: train_shadownet.py:191 * 140549237397312 Tensor("Print_2:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:23:20: train_shadownet.py:199 * 140549237397312 Tensor("Print_3:0", dtype=float32)
+INFO: 04-06 01:26:02: train_shadownet.py:256 * 140549237397312 Epoch: 1 cost= 853.817200 seq distance=  2.463086 train accuracy=  0.003242
+INFO: 04-06 01:26:03: train_shadownet.py:191 * 140549237397312 Tensor("Print_4:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:26:03: train_shadownet.py:199 * 140549237397312 Tensor("Print_5:0", dtype=float32)
+INFO: 04-06 01:26:04: train_shadownet.py:256 * 140549237397312 Epoch: 2 cost= 457.608276 seq distance=  1.320993 train accuracy=  0.042542
+INFO: 04-06 01:26:05: train_shadownet.py:191 * 140549237397312 Tensor("Print_6:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:26:05: train_shadownet.py:199 * 140549237397312 Tensor("Print_7:0", dtype=float32)
+INFO: 04-06 01:26:06: train_shadownet.py:256 * 140549237397312 Epoch: 3 cost= 410.506531 seq distance=  1.000000 train accuracy=  0.000000
+INFO: 04-06 01:26:07: train_shadownet.py:191 * 140549237397312 Tensor("Print_8:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:26:07: train_shadownet.py:199 * 140549237397312 Tensor("Print_9:0", dtype=float32)
+INFO: 04-06 01:26:08: train_shadownet.py:256 * 140549237397312 Epoch: 4 cost= 621.793396 seq distance=  1.872375 train accuracy=  0.064091
+INFO: 04-06 01:26:09: train_shadownet.py:191 * 140549237397312 Tensor("Print_10:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:26:09: train_shadownet.py:199 * 140549237397312 Tensor("Print_11:0", dtype=float32)
+INFO: 04-06 01:26:10: train_shadownet.py:256 * 140549237397312 Epoch: 5 cost= 252.152283 seq distance=  0.976166 train accuracy=  0.000000
+INFO: 04-06 01:26:11: train_shadownet.py:191 * 140549237397312 Tensor("Print_12:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:26:11: train_shadownet.py:199 * 140549237397312 Tensor("Print_13:0", dtype=float32)
+INFO: 04-06 01:28:31: train_shadownet.py:86 * 139940713142080 Tensor("Print:0", shape=(?, ?), dtype=int32)
+INFO: 04-06 01:28:31: train_shadownet.py:87 * 139940713142080 XSparseTensor(indices=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:0", shape=(?, 2), dtype=int64), values=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:1", shape=(?,), dtype=int32), dense_shape=Tensor("shuffle_batch/TakeManySparseFromTensorsMap:2", shape=(2,), dtype=int64))
+INFO: 04-06 01:28:32: train_shadownet.py:138 * 139940713142080 Training from scratch
+INFO: 04-06 01:29:52: train_shadownet.py:189 * 139940713142080 Tensor("Print_1:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:29:52: train_shadownet.py:197 * 139940713142080 Tensor("Print_2:0", dtype=float32)
+INFO: 04-06 01:35:45: train_shadownet.py:136 * 140162232698688 Training from scratch
+INFO: 04-06 01:37:04: train_shadownet.py:187 * 140162232698688 Tensor("Print_33:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:37:04: train_shadownet.py:195 * 140162232698688 Tensor("Print_34:0", dtype=float32)
+INFO: 04-06 01:39:41: train_shadownet.py:233 * 140162232698688 Epoch: 1 cost= 797.529297 seq distance=  2.771407 train accuracy=  0.027969
+INFO: 04-06 01:39:42: train_shadownet.py:187 * 140162232698688 Tensor("Print_67:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:39:42: train_shadownet.py:195 * 140162232698688 Tensor("Print_68:0", dtype=float32)
+INFO: 04-06 01:39:43: train_shadownet.py:233 * 140162232698688 Epoch: 2 cost= 388.924744 seq distance=  1.185424 train accuracy=  0.082600
+INFO: 04-06 01:39:44: train_shadownet.py:187 * 140162232698688 Tensor("Print_101:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:39:44: train_shadownet.py:195 * 140162232698688 Tensor("Print_102:0", dtype=float32)
+INFO: 04-06 01:39:45: train_shadownet.py:233 * 140162232698688 Epoch: 3 cost= 361.782623 seq distance=  0.986580 train accuracy=  0.073770
+INFO: 04-06 01:39:46: train_shadownet.py:187 * 140162232698688 Tensor("Print_135:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:39:46: train_shadownet.py:195 * 140162232698688 Tensor("Print_136:0", dtype=float32)
+INFO: 04-06 01:39:48: train_shadownet.py:233 * 140162232698688 Epoch: 4 cost= 308.914185 seq distance=  0.904118 train accuracy=  0.016529
+INFO: 04-06 01:39:49: train_shadownet.py:187 * 140162232698688 Tensor("Print_169:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:39:49: train_shadownet.py:195 * 140162232698688 Tensor("Print_170:0", dtype=float32)
+INFO: 04-06 01:39:50: train_shadownet.py:233 * 140162232698688 Epoch: 5 cost= 412.847565 seq distance=  1.000000 train accuracy=  0.000000
+INFO: 04-06 01:39:51: train_shadownet.py:187 * 140162232698688 Tensor("Print_203:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:39:51: train_shadownet.py:195 * 140162232698688 Tensor("Print_204:0", dtype=float32)
+INFO: 04-06 01:39:52: train_shadownet.py:233 * 140162232698688 Epoch: 6 cost= 522.475464 seq distance=  1.896842 train accuracy=  0.111392
+INFO: 04-06 01:39:53: train_shadownet.py:187 * 140162232698688 Tensor("Print_237:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:39:53: train_shadownet.py:195 * 140162232698688 Tensor("Print_238:0", dtype=float32)
+INFO: 04-06 01:39:55: train_shadownet.py:233 * 140162232698688 Epoch: 7 cost= 262.329865 seq distance=  1.256894 train accuracy=  0.090106
+INFO: 04-06 01:39:56: train_shadownet.py:187 * 140162232698688 Tensor("Print_271:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:39:56: train_shadownet.py:195 * 140162232698688 Tensor("Print_272:0", dtype=float32)
+INFO: 04-06 01:39:58: train_shadownet.py:233 * 140162232698688 Epoch: 8 cost= 254.740173 seq distance=  0.971746 train accuracy=  0.000710
+INFO: 04-06 01:39:59: train_shadownet.py:187 * 140162232698688 Tensor("Print_305:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:39:59: train_shadownet.py:195 * 140162232698688 Tensor("Print_306:0", dtype=float32)
+INFO: 04-06 01:40:01: train_shadownet.py:233 * 140162232698688 Epoch: 9 cost= 418.654449 seq distance=  1.220131 train accuracy=  0.066766
+INFO: 04-06 01:40:02: train_shadownet.py:187 * 140162232698688 Tensor("Print_339:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:40:02: train_shadownet.py:195 * 140162232698688 Tensor("Print_340:0", dtype=float32)
+INFO: 04-06 01:40:03: train_shadownet.py:233 * 140162232698688 Epoch: 10 cost= 325.148987 seq distance=  0.999270 train accuracy=  0.000000
+INFO: 04-06 01:40:05: train_shadownet.py:187 * 140162232698688 Tensor("Print_373:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:40:05: train_shadownet.py:195 * 140162232698688 Tensor("Print_374:0", dtype=float32)
+INFO: 04-06 01:40:06: train_shadownet.py:233 * 140162232698688 Epoch: 11 cost= 240.799683 seq distance=  0.891000 train accuracy=  0.047815
+INFO: 04-06 01:40:08: train_shadownet.py:187 * 140162232698688 Tensor("Print_407:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:40:08: train_shadownet.py:195 * 140162232698688 Tensor("Print_408:0", dtype=float32)
+INFO: 04-06 01:40:10: train_shadownet.py:233 * 140162232698688 Epoch: 12 cost= 306.720612 seq distance=  0.963263 train accuracy=  0.000406
+INFO: 04-06 01:40:11: train_shadownet.py:187 * 140162232698688 Tensor("Print_441:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:40:11: train_shadownet.py:195 * 140162232698688 Tensor("Print_442:0", dtype=float32)
+INFO: 04-06 01:40:13: train_shadownet.py:233 * 140162232698688 Epoch: 13 cost= 208.863983 seq distance=  0.982129 train accuracy=  0.080612
+INFO: 04-06 01:40:15: train_shadownet.py:187 * 140162232698688 Tensor("Print_475:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:40:15: train_shadownet.py:195 * 140162232698688 Tensor("Print_476:0", dtype=float32)
+INFO: 04-06 01:40:16: train_shadownet.py:233 * 140162232698688 Epoch: 14 cost= 245.714691 seq distance=  0.976953 train accuracy=  0.000692
+INFO: 04-06 01:40:18: train_shadownet.py:187 * 140162232698688 Tensor("Print_509:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:40:18: train_shadownet.py:195 * 140162232698688 Tensor("Print_510:0", dtype=float32)
+INFO: 04-06 01:40:20: train_shadownet.py:233 * 140162232698688 Epoch: 15 cost= 198.428467 seq distance=  0.882164 train accuracy=  0.016181
+INFO: 04-06 01:40:22: train_shadownet.py:187 * 140162232698688 Tensor("Print_543:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:40:22: train_shadownet.py:195 * 140162232698688 Tensor("Print_544:0", dtype=float32)
+INFO: 04-06 01:40:24: train_shadownet.py:233 * 140162232698688 Epoch: 16 cost= 219.856689 seq distance=  0.879408 train accuracy=  0.011917
+INFO: 04-06 01:40:25: train_shadownet.py:187 * 140162232698688 Tensor("Print_577:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:40:25: train_shadownet.py:195 * 140162232698688 Tensor("Print_578:0", dtype=float32)
+INFO: 04-06 01:40:27: train_shadownet.py:233 * 140162232698688 Epoch: 17 cost= 204.254578 seq distance=  0.854309 train accuracy=  0.020993
+INFO: 04-06 01:40:29: train_shadownet.py:187 * 140162232698688 Tensor("Print_611:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:40:29: train_shadownet.py:195 * 140162232698688 Tensor("Print_612:0", dtype=float32)
+INFO: 04-06 01:40:31: train_shadownet.py:233 * 140162232698688 Epoch: 18 cost= 213.635132 seq distance=  0.875322 train accuracy=  0.016814
+INFO: 04-06 01:40:33: train_shadownet.py:187 * 140162232698688 Tensor("Print_645:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:40:33: train_shadownet.py:195 * 140162232698688 Tensor("Print_646:0", dtype=float32)
+INFO: 04-06 01:40:35: train_shadownet.py:233 * 140162232698688 Epoch: 19 cost= 218.553894 seq distance=  0.849748 train accuracy=  0.019585
+INFO: 04-06 01:40:37: train_shadownet.py:187 * 140162232698688 Tensor("Print_679:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:40:37: train_shadownet.py:195 * 140162232698688 Tensor("Print_680:0", dtype=float32)
+INFO: 04-06 01:40:39: train_shadownet.py:233 * 140162232698688 Epoch: 20 cost= 210.490784 seq distance=  0.845052 train accuracy=  0.021661
+INFO: 04-06 01:40:42: train_shadownet.py:187 * 140162232698688 Tensor("Print_713:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:40:42: train_shadownet.py:195 * 140162232698688 Tensor("Print_714:0", dtype=float32)
+INFO: 04-06 01:40:44: train_shadownet.py:233 * 140162232698688 Epoch: 21 cost= 209.387772 seq distance=  0.862317 train accuracy=  0.021925
+INFO: 04-06 01:40:46: train_shadownet.py:187 * 140162232698688 Tensor("Print_747:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:40:46: train_shadownet.py:195 * 140162232698688 Tensor("Print_748:0", dtype=float32)
+INFO: 04-06 01:40:48: train_shadownet.py:233 * 140162232698688 Epoch: 22 cost= 232.539444 seq distance=  0.841498 train accuracy=  0.023857
+INFO: 04-06 01:40:50: train_shadownet.py:187 * 140162232698688 Tensor("Print_781:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:40:50: train_shadownet.py:195 * 140162232698688 Tensor("Print_782:0", dtype=float32)
+INFO: 04-06 01:40:52: train_shadownet.py:233 * 140162232698688 Epoch: 23 cost= 212.346710 seq distance=  0.825647 train accuracy=  0.035831
+INFO: 04-06 01:40:55: train_shadownet.py:187 * 140162232698688 Tensor("Print_815:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:40:55: train_shadownet.py:195 * 140162232698688 Tensor("Print_816:0", dtype=float32)
+INFO: 04-06 01:40:57: train_shadownet.py:233 * 140162232698688 Epoch: 24 cost= 205.939087 seq distance=  0.860395 train accuracy=  0.020055
+INFO: 04-06 01:40:59: train_shadownet.py:187 * 140162232698688 Tensor("Print_849:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:40:59: train_shadownet.py:195 * 140162232698688 Tensor("Print_850:0", dtype=float32)
+INFO: 04-06 01:41:02: train_shadownet.py:233 * 140162232698688 Epoch: 25 cost= 182.871719 seq distance=  0.856063 train accuracy=  0.026419
+INFO: 04-06 01:41:04: train_shadownet.py:187 * 140162232698688 Tensor("Print_883:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:41:04: train_shadownet.py:195 * 140162232698688 Tensor("Print_884:0", dtype=float32)
+INFO: 04-06 01:41:06: train_shadownet.py:233 * 140162232698688 Epoch: 26 cost= 192.972321 seq distance=  0.854035 train accuracy=  0.020850
+INFO: 04-06 01:41:09: train_shadownet.py:187 * 140162232698688 Tensor("Print_917:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:41:09: train_shadownet.py:195 * 140162232698688 Tensor("Print_918:0", dtype=float32)
+INFO: 04-06 01:41:11: train_shadownet.py:233 * 140162232698688 Epoch: 27 cost= 192.788956 seq distance=  0.844829 train accuracy=  0.035970
+INFO: 04-06 01:41:14: train_shadownet.py:187 * 140162232698688 Tensor("Print_951:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:41:14: train_shadownet.py:195 * 140162232698688 Tensor("Print_952:0", dtype=float32)
+INFO: 04-06 01:41:16: train_shadownet.py:233 * 140162232698688 Epoch: 28 cost= 195.549255 seq distance=  0.858515 train accuracy=  0.019301
+INFO: 04-06 01:41:19: train_shadownet.py:187 * 140162232698688 Tensor("Print_985:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:41:19: train_shadownet.py:195 * 140162232698688 Tensor("Print_986:0", dtype=float32)
+INFO: 04-06 01:41:21: train_shadownet.py:233 * 140162232698688 Epoch: 29 cost= 218.745056 seq distance=  0.831418 train accuracy=  0.028552
+INFO: 04-06 01:41:24: train_shadownet.py:187 * 140162232698688 Tensor("Print_1019:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:41:24: train_shadownet.py:195 * 140162232698688 Tensor("Print_1020:0", dtype=float32)
+INFO: 04-06 01:41:27: train_shadownet.py:233 * 140162232698688 Epoch: 30 cost= 186.885468 seq distance=  0.840997 train accuracy=  0.031685
+INFO: 04-06 01:41:29: train_shadownet.py:187 * 140162232698688 Tensor("Print_1053:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:41:29: train_shadownet.py:195 * 140162232698688 Tensor("Print_1054:0", dtype=float32)
+INFO: 04-06 01:41:32: train_shadownet.py:233 * 140162232698688 Epoch: 31 cost= 213.463989 seq distance=  0.864965 train accuracy=  0.018591
+INFO: 04-06 01:41:35: train_shadownet.py:187 * 140162232698688 Tensor("Print_1087:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:41:35: train_shadownet.py:195 * 140162232698688 Tensor("Print_1088:0", dtype=float32)
+INFO: 04-06 01:41:37: train_shadownet.py:233 * 140162232698688 Epoch: 32 cost= 227.401886 seq distance=  0.795288 train accuracy=  0.037895
+INFO: 04-06 01:41:40: train_shadownet.py:187 * 140162232698688 Tensor("Print_1121:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:41:40: train_shadownet.py:195 * 140162232698688 Tensor("Print_1122:0", dtype=float32)
+INFO: 04-06 01:41:43: train_shadownet.py:233 * 140162232698688 Epoch: 33 cost= 198.460007 seq distance=  0.863097 train accuracy=  0.018513
+INFO: 04-06 01:41:46: train_shadownet.py:187 * 140162232698688 Tensor("Print_1155:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:41:46: train_shadownet.py:195 * 140162232698688 Tensor("Print_1156:0", dtype=float32)
+INFO: 04-06 01:41:49: train_shadownet.py:233 * 140162232698688 Epoch: 34 cost= 233.505524 seq distance=  0.825359 train accuracy=  0.034149
+INFO: 04-06 01:41:51: train_shadownet.py:187 * 140162232698688 Tensor("Print_1189:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:41:51: train_shadownet.py:195 * 140162232698688 Tensor("Print_1190:0", dtype=float32)
+INFO: 04-06 01:41:54: train_shadownet.py:233 * 140162232698688 Epoch: 35 cost= 158.869019 seq distance=  0.834254 train accuracy=  0.029218
+INFO: 04-06 01:41:57: train_shadownet.py:187 * 140162232698688 Tensor("Print_1223:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:41:57: train_shadownet.py:195 * 140162232698688 Tensor("Print_1224:0", dtype=float32)
+INFO: 04-06 01:42:01: train_shadownet.py:233 * 140162232698688 Epoch: 36 cost= 206.278381 seq distance=  0.900036 train accuracy=  0.009869
+INFO: 04-06 01:42:03: train_shadownet.py:187 * 140162232698688 Tensor("Print_1257:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:42:03: train_shadownet.py:195 * 140162232698688 Tensor("Print_1258:0", dtype=float32)
+INFO: 04-06 01:42:06: train_shadownet.py:233 * 140162232698688 Epoch: 37 cost= 213.765961 seq distance=  0.786108 train accuracy=  0.043350
+INFO: 04-06 01:42:10: train_shadownet.py:187 * 140162232698688 Tensor("Print_1291:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:42:10: train_shadownet.py:195 * 140162232698688 Tensor("Print_1292:0", dtype=float32)
+INFO: 04-06 01:42:13: train_shadownet.py:233 * 140162232698688 Epoch: 38 cost= 210.119568 seq distance=  0.887309 train accuracy=  0.014099
+INFO: 04-06 01:42:16: train_shadownet.py:187 * 140162232698688 Tensor("Print_1325:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:42:16: train_shadownet.py:195 * 140162232698688 Tensor("Print_1326:0", dtype=float32)
+INFO: 04-06 01:42:19: train_shadownet.py:233 * 140162232698688 Epoch: 39 cost= 220.290771 seq distance=  0.799441 train accuracy=  0.044224
+INFO: 04-06 01:42:22: train_shadownet.py:187 * 140162232698688 Tensor("Print_1359:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:42:22: train_shadownet.py:195 * 140162232698688 Tensor("Print_1360:0", dtype=float32)
+INFO: 04-06 01:42:25: train_shadownet.py:233 * 140162232698688 Epoch: 40 cost= 214.854889 seq distance=  0.856643 train accuracy=  0.015339
+INFO: 04-06 01:42:29: train_shadownet.py:187 * 140162232698688 Tensor("Print_1393:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:42:29: train_shadownet.py:195 * 140162232698688 Tensor("Print_1394:0", dtype=float32)
+INFO: 04-06 01:42:32: train_shadownet.py:233 * 140162232698688 Epoch: 41 cost= 209.643875 seq distance=  0.807050 train accuracy=  0.032808
+INFO: 04-06 01:42:35: train_shadownet.py:187 * 140162232698688 Tensor("Print_1427:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:42:35: train_shadownet.py:195 * 140162232698688 Tensor("Print_1428:0", dtype=float32)
+INFO: 04-06 01:42:38: train_shadownet.py:233 * 140162232698688 Epoch: 42 cost= 195.744720 seq distance=  0.855417 train accuracy=  0.025503
+INFO: 04-06 01:42:42: train_shadownet.py:187 * 140162232698688 Tensor("Print_1461:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:42:42: train_shadownet.py:195 * 140162232698688 Tensor("Print_1462:0", dtype=float32)
+INFO: 04-06 01:42:45: train_shadownet.py:233 * 140162232698688 Epoch: 43 cost= 176.567017 seq distance=  0.837367 train accuracy=  0.028157
+INFO: 04-06 01:42:49: train_shadownet.py:187 * 140162232698688 Tensor("Print_1495:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:42:49: train_shadownet.py:195 * 140162232698688 Tensor("Print_1496:0", dtype=float32)
+INFO: 04-06 01:42:52: train_shadownet.py:233 * 140162232698688 Epoch: 44 cost= 212.052841 seq distance=  0.860943 train accuracy=  0.018574
+INFO: 04-06 01:42:56: train_shadownet.py:187 * 140162232698688 Tensor("Print_1529:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:42:56: train_shadownet.py:195 * 140162232698688 Tensor("Print_1530:0", dtype=float32)
+INFO: 04-06 01:42:59: train_shadownet.py:233 * 140162232698688 Epoch: 45 cost= 212.817261 seq distance=  0.814960 train accuracy=  0.031751
+INFO: 04-06 01:43:03: train_shadownet.py:187 * 140162232698688 Tensor("Print_1563:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:43:03: train_shadownet.py:195 * 140162232698688 Tensor("Print_1564:0", dtype=float32)
+INFO: 04-06 01:43:06: train_shadownet.py:233 * 140162232698688 Epoch: 46 cost= 209.786896 seq distance=  0.848024 train accuracy=  0.018698
+INFO: 04-06 01:43:10: train_shadownet.py:187 * 140162232698688 Tensor("Print_1597:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:43:10: train_shadownet.py:195 * 140162232698688 Tensor("Print_1598:0", dtype=float32)
+INFO: 04-06 01:43:13: train_shadownet.py:233 * 140162232698688 Epoch: 47 cost= 199.016846 seq distance=  0.819343 train accuracy=  0.028999
+INFO: 04-06 01:43:18: train_shadownet.py:187 * 140162232698688 Tensor("Print_1631:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:43:18: train_shadownet.py:195 * 140162232698688 Tensor("Print_1632:0", dtype=float32)
+INFO: 04-06 01:43:22: train_shadownet.py:233 * 140162232698688 Epoch: 48 cost= 200.052307 seq distance=  0.846639 train accuracy=  0.019432
+INFO: 04-06 01:43:25: train_shadownet.py:187 * 140162232698688 Tensor("Print_1665:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:43:25: train_shadownet.py:195 * 140162232698688 Tensor("Print_1666:0", dtype=float32)
+INFO: 04-06 01:43:29: train_shadownet.py:233 * 140162232698688 Epoch: 49 cost= 215.123459 seq distance=  0.833540 train accuracy=  0.031113
+INFO: 04-06 01:43:33: train_shadownet.py:187 * 140162232698688 Tensor("Print_1699:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:43:33: train_shadownet.py:195 * 140162232698688 Tensor("Print_1700:0", dtype=float32)
+INFO: 04-06 01:43:36: train_shadownet.py:233 * 140162232698688 Epoch: 50 cost= 195.616455 seq distance=  0.831801 train accuracy=  0.026557
+INFO: 04-06 01:43:40: train_shadownet.py:187 * 140162232698688 Tensor("Print_1733:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:43:40: train_shadownet.py:195 * 140162232698688 Tensor("Print_1734:0", dtype=float32)
+INFO: 04-06 01:43:44: train_shadownet.py:233 * 140162232698688 Epoch: 51 cost= 209.187225 seq distance=  0.846452 train accuracy=  0.023600
+INFO: 04-06 01:43:48: train_shadownet.py:187 * 140162232698688 Tensor("Print_1767:0", shape=(32,), dtype=float32)
+INFO: 04-06 01:43:48: train_shadownet.py:195 * 140162232698688 Tensor("Print_1768:0", dtype=float32)
+INFO: 04-06 01:43:52: train_shadownet.py:233 * 140162232698688 Epoch: 52 cost= 176.801788 seq distance=  0.829514 train accuracy=  0.026464
+INFO: 04-06 02:23:04: train_shadownet.py:136 * 140284031981376 Training from scratch
+INFO: 04-06 02:24:23: train_shadownet.py:183 * 140284031981376 Tensor("Print_33:0", shape=(32,), dtype=float32)
+INFO: 04-06 02:24:23: train_shadownet.py:191 * 140284031981376 Tensor("Print_34:0", dtype=float32)
+INFO: 04-06 02:49:56: train_shadownet.py:136 * 140422886545216 Training from scratch
+INFO: 04-06 02:53:51: train_shadownet.py:228 * 140422886545216 Epoch: 1 cost= 854.661987 seq distance=  3.613798 train accuracy=  0.010004
+INFO: 04-06 02:53:53: train_shadownet.py:228 * 140422886545216 Epoch: 2 cost= 343.742981 seq distance=  0.917148 train accuracy=  0.021801
+INFO: 04-06 02:53:55: train_shadownet.py:228 * 140422886545216 Epoch: 3 cost= 407.532196 seq distance=  1.000000 train accuracy=  0.000000
+INFO: 04-06 02:59:08: train_shadownet.py:136 * 139739650549568 Training from scratch
+INFO: 04-06 03:01:35: train_shadownet.py:136 * 139629587695424 Training from scratch
+INFO: 04-06 03:04:16: train_shadownet.py:228 * 139629587695424 Epoch: 1 cost= 804.598511 seq distance=  2.374967 train accuracy=  0.013321
+INFO: 04-06 03:04:17: train_shadownet.py:228 * 139629587695424 Epoch: 2 cost= 316.471375 seq distance=  0.968095 train accuracy=  0.002189
+INFO: 04-06 03:04:19: train_shadownet.py:228 * 139629587695424 Epoch: 3 cost= 287.394073 seq distance=  0.994618 train accuracy=  0.000000
+INFO: 04-06 03:04:21: train_shadownet.py:228 * 139629587695424 Epoch: 4 cost= 438.333313 seq distance=  1.837061 train accuracy=  0.119554
+INFO: 04-06 03:04:23: train_shadownet.py:228 * 139629587695424 Epoch: 5 cost= 488.111053 seq distance=  0.977233 train accuracy=  0.000000
+INFO: 04-06 03:04:25: train_shadownet.py:228 * 139629587695424 Epoch: 6 cost= 399.190918 seq distance=  0.883629 train accuracy=  0.059283
+INFO: 04-06 03:04:27: train_shadownet.py:228 * 139629587695424 Epoch: 7 cost= 435.213562 seq distance=  0.976464 train accuracy=  0.000000
+INFO: 04-06 03:04:30: train_shadownet.py:228 * 139629587695424 Epoch: 8 cost= 344.148895 seq distance=  1.215966 train accuracy=  0.078263
+INFO: 04-06 04:07:57: train_shadownet.py:178 * 139940822751040 Training from scratch
+INFO: 04-06 04:11:56: train_shadownet.py:224 * 139940822751040 Epoch: 1 cost= 843.837769 seq distance=  2.935817 train accuracy=  0.005921
+INFO: 04-06 04:11:58: train_shadownet.py:224 * 139940822751040 Epoch: 2 cost= 339.421814 seq distance=  1.011943 train accuracy=  0.015652
+INFO: 04-06 04:11:59: train_shadownet.py:224 * 139940822751040 Epoch: 3 cost= 453.984009 seq distance=  1.000000 train accuracy=  0.000000
+INFO: 04-06 04:12:00: train_shadownet.py:224 * 139940822751040 Epoch: 4 cost= 566.943359 seq distance=  1.689699 train accuracy=  0.093803
+INFO: 04-06 04:12:01: train_shadownet.py:224 * 139940822751040 Epoch: 5 cost= 290.011536 seq distance=  0.989967 train accuracy=  0.000000
+INFO: 04-06 04:12:02: train_shadownet.py:224 * 139940822751040 Epoch: 6 cost= 325.381714 seq distance=  0.952086 train accuracy=  0.095538
+INFO: 04-06 04:17:49: train_shadownet.py:178 * 140268079449920 Training from scratch
+INFO: 04-06 04:21:54: train_shadownet.py:224 * 140268079449920 Epoch: 1 cost= 827.210571 seq distance=  3.498285 train accuracy=  0.018000
+INFO: 04-06 04:21:55: train_shadownet.py:224 * 140268079449920 Epoch: 2 cost= 294.046112 seq distance=  0.941681 train accuracy=  0.010963
+INFO: 04-06 04:21:56: train_shadownet.py:224 * 140268079449920 Epoch: 3 cost= 409.520172 seq distance=  1.000000 train accuracy=  0.000000
+INFO: 04-06 04:21:57: train_shadownet.py:224 * 140268079449920 Epoch: 4 cost= 592.225769 seq distance=  2.544297 train accuracy=  0.102087
+INFO: 04-06 04:21:59: train_shadownet.py:224 * 140268079449920 Epoch: 5 cost= 377.742798 seq distance=  1.005195 train accuracy=  0.058033
+INFO: 04-06 04:22:00: train_shadownet.py:224 * 140268079449920 Epoch: 6 cost= 217.449463 seq distance=  0.904968 train accuracy=  0.025529
+INFO: 04-15 04:44:35: train_shadownet.py:178 * 140153900824384 Training from scratch
+INFO: 04-15 04:44:58: train_shadownet.py:224 * 140153900824384 Epoch: 1 cost= 820.355286 seq distance=  2.741905 train accuracy=  0.004202
+INFO: 04-15 04:45:21: train_shadownet.py:224 * 140153900824384 Epoch: 2 cost= 437.125946 seq distance=  1.075262 train accuracy=  0.061668
+INFO: 04-15 04:45:43: train_shadownet.py:224 * 140153900824384 Epoch: 3 cost= 325.450134 seq distance=  1.054571 train accuracy=  0.048815
+INFO: 04-15 04:46:06: train_shadownet.py:224 * 140153900824384 Epoch: 4 cost= 271.816223 seq distance=  0.872080 train accuracy=  0.063987
+INFO: 04-15 04:46:30: train_shadownet.py:224 * 140153900824384 Epoch: 5 cost= 361.575623 seq distance=  1.000000 train accuracy=  0.000000
+INFO: 04-15 04:46:52: train_shadownet.py:224 * 140153900824384 Epoch: 6 cost= 366.441284 seq distance=  0.933283 train accuracy=  0.068387
+INFO: 04-15 04:47:15: train_shadownet.py:224 * 140153900824384 Epoch: 7 cost= 351.199036 seq distance=  0.977132 train accuracy=  0.000000
+INFO: 04-15 04:47:38: train_shadownet.py:224 * 140153900824384 Epoch: 8 cost= 313.643555 seq distance=  1.056304 train accuracy=  0.084060
+INFO: 04-15 04:48:01: train_shadownet.py:224 * 140153900824384 Epoch: 9 cost= 267.151062 seq distance=  0.965445 train accuracy=  0.001689
+INFO: 04-15 04:48:24: train_shadownet.py:224 * 140153900824384 Epoch: 10 cost= 222.241837 seq distance=  0.887265 train accuracy=  0.046742
+INFO: 04-15 05:56:16: train_shadownet.py:182 * 140271881271104 Restore model from model/CRNN/model/shadownet/shadownet_-10
+INFO: 04-15 05:56:16: tf_logging.py:110 * 140271881271104 Restoring parameters from model/CRNN/model/shadownet/shadownet_-10
+INFO: 04-15 05:56:39: train_shadownet.py:224 * 140271881271104 Epoch: 1 cost= 279.060486 seq distance=  0.930230 train accuracy=  0.005992
+INFO: 04-15 05:57:02: train_shadownet.py:224 * 140271881271104 Epoch: 2 cost= 250.791870 seq distance=  0.839545 train accuracy=  0.069401
+INFO: 04-15 05:57:26: train_shadownet.py:224 * 140271881271104 Epoch: 3 cost= 240.559769 seq distance=  0.911943 train accuracy=  0.012108
+INFO: 04-15 05:57:49: train_shadownet.py:224 * 140271881271104 Epoch: 4 cost= 204.169479 seq distance=  0.807747 train accuracy=  0.042877
+INFO: 04-15 05:58:12: train_shadownet.py:224 * 140271881271104 Epoch: 5 cost= 207.254211 seq distance=  0.888495 train accuracy=  0.015104
+INFO: 04-15 06:35:09: train_shadownet.py:182 * 139746796607296 Restore model from model/CRNN/model/shadownet/shadownet_-15
+INFO: 04-15 06:35:09: tf_logging.py:110 * 139746796607296 Restoring parameters from model/CRNN/model/shadownet/shadownet_-15
+INFO: 04-15 06:35:33: train_shadownet.py:224 * 139746796607296 Epoch: 1 cost= 212.544708 seq distance=  0.829446 train accuracy=  0.036479
+INFO: 04-15 06:35:56: train_shadownet.py:224 * 139746796607296 Epoch: 2 cost= 192.121460 seq distance=  0.856485 train accuracy=  0.015378
+INFO: 04-15 06:36:19: train_shadownet.py:224 * 139746796607296 Epoch: 3 cost= 216.093506 seq distance=  0.850126 train accuracy=  0.024750
+INFO: 04-15 06:36:44: train_shadownet.py:182 * 140554477430592 Restore model from model/CRNN/model/shadownet/shadownet_-15
+INFO: 04-15 06:36:44: tf_logging.py:110 * 140554477430592 Restoring parameters from model/CRNN/model/shadownet/shadownet_-15
+INFO: 04-15 06:54:11: train_shadownet.py:182 * 140012349826880 Restore model from model/CRNN/model/shadownet/shadownet_-15
+INFO: 04-15 06:54:11: tf_logging.py:110 * 140012349826880 Restoring parameters from model/CRNN/model/shadownet/shadownet_-15
+INFO: 04-15 07:04:31: train_shadownet.py:182 * 139684502472512 Restore model from model/CRNN/model/shadownet/shadownet_-18
+INFO: 04-15 07:04:31: tf_logging.py:110 * 139684502472512 Restoring parameters from model/CRNN/model/shadownet/shadownet_-18
+INFO: 04-15 07:04:54: train_shadownet.py:224 * 139684502472512 Epoch: 1 cost= 195.782532 seq distance=  0.830403 train accuracy=  0.038157
+INFO: 04-15 07:05:19: train_shadownet.py:224 * 139684502472512 Epoch: 2 cost= 217.761078 seq distance=  0.860016 train accuracy=  0.015723
+INFO: 04-15 07:05:42: train_shadownet.py:224 * 139684502472512 Epoch: 3 cost= 244.873108 seq distance=  0.815742 train accuracy=  0.038922
+INFO: 04-15 07:06:05: train_shadownet.py:224 * 139684502472512 Epoch: 4 cost= 238.309891 seq distance=  0.846807 train accuracy=  0.024024
+INFO: 04-15 07:06:28: train_shadownet.py:224 * 139684502472512 Epoch: 5 cost= 203.724701 seq distance=  0.808592 train accuracy=  0.046772
+INFO: 04-15 07:06:51: train_shadownet.py:224 * 139684502472512 Epoch: 6 cost= 202.913147 seq distance=  0.870794 train accuracy=  0.020735
+INFO: 04-15 07:07:14: train_shadownet.py:224 * 139684502472512 Epoch: 7 cost= 193.115356 seq distance=  0.786266 train accuracy=  0.062164
+INFO: 04-15 07:07:37: train_shadownet.py:224 * 139684502472512 Epoch: 8 cost= 194.145172 seq distance=  0.877199 train accuracy=  0.015719
+INFO: 04-15 07:08:00: train_shadownet.py:224 * 139684502472512 Epoch: 9 cost= 207.599274 seq distance=  0.809072 train accuracy=  0.039758
+INFO: 04-15 07:08:23: train_shadownet.py:224 * 139684502472512 Epoch: 10 cost= 186.670975 seq distance=  0.869417 train accuracy=  0.019502
+INFO: 04-15 07:08:47: train_shadownet.py:224 * 139684502472512 Epoch: 11 cost= 180.677689 seq distance=  0.799692 train accuracy=  0.034939
+INFO: 04-15 07:09:10: train_shadownet.py:224 * 139684502472512 Epoch: 12 cost= 228.949097 seq distance=  0.846028 train accuracy=  0.016087
+INFO: 04-15 07:09:32: train_shadownet.py:224 * 139684502472512 Epoch: 13 cost= 200.136658 seq distance=  0.788251 train accuracy=  0.057803
+INFO: 04-15 07:09:56: train_shadownet.py:224 * 139684502472512 Epoch: 14 cost= 187.675842 seq distance=  0.876089 train accuracy=  0.013372
+INFO: 04-15 07:10:18: train_shadownet.py:224 * 139684502472512 Epoch: 15 cost= 193.820267 seq distance=  0.776234 train accuracy=  0.061750
+INFO: 04-15 07:10:42: train_shadownet.py:224 * 139684502472512 Epoch: 16 cost= 220.482559 seq distance=  0.838875 train accuracy=  0.028695
+INFO: 04-15 07:11:04: train_shadownet.py:224 * 139684502472512 Epoch: 17 cost= 201.916809 seq distance=  0.792373 train accuracy=  0.047416
+INFO: 04-15 07:11:28: train_shadownet.py:224 * 139684502472512 Epoch: 18 cost= 199.858368 seq distance=  0.859544 train accuracy=  0.020736
+INFO: 04-15 07:11:51: train_shadownet.py:224 * 139684502472512 Epoch: 19 cost= 201.486176 seq distance=  0.800022 train accuracy=  0.045949
+INFO: 04-15 07:12:14: train_shadownet.py:224 * 139684502472512 Epoch: 20 cost= 238.417023 seq distance=  0.867829 train accuracy=  0.025365
+INFO: 04-15 07:12:37: train_shadownet.py:224 * 139684502472512 Epoch: 21 cost= 206.548996 seq distance=  0.797689 train accuracy=  0.042486
+INFO: 04-15 07:13:00: train_shadownet.py:224 * 139684502472512 Epoch: 22 cost= 200.996994 seq distance=  0.877319 train accuracy=  0.015152
+INFO: 04-15 07:13:34: train_shadownet.py:182 * 140679275620160 Restore model from model/CRNN/model/shadownet/shadownet_-18
+INFO: 04-15 07:13:34: tf_logging.py:110 * 140679275620160 Restoring parameters from model/CRNN/model/shadownet/shadownet_-18
+INFO: 04-15 07:14:59: train_shadownet.py:182 * 139797950138176 Restore model from model/CRNN/model/shadownet/shadownet_-40
+INFO: 04-15 07:14:59: tf_logging.py:110 * 139797950138176 Restoring parameters from model/CRNN/model/shadownet/shadownet_-40
+INFO: 04-15 07:15:25: train_shadownet.py:224 * 139797950138176 Epoch: 1 cost= 185.811523 seq distance=  0.800162 train accuracy=  0.043729
+INFO: 04-15 07:15:48: train_shadownet.py:224 * 139797950138176 Epoch: 2 cost= 184.036270 seq distance=  0.841831 train accuracy=  0.026771
+INFO: 04-15 07:16:11: train_shadownet.py:224 * 139797950138176 Epoch: 3 cost= 205.938263 seq distance=  0.845513 train accuracy=  0.031365
+INFO: 04-15 07:16:34: train_shadownet.py:224 * 139797950138176 Epoch: 4 cost= 215.493408 seq distance=  0.815158 train accuracy=  0.027879
+INFO: 04-15 07:16:57: train_shadownet.py:224 * 139797950138176 Epoch: 5 cost= 233.943695 seq distance=  0.816039 train accuracy=  0.033828
+INFO: 04-15 07:17:20: train_shadownet.py:224 * 139797950138176 Epoch: 6 cost= 200.385300 seq distance=  0.829626 train accuracy=  0.024815
+INFO: 04-15 07:17:43: train_shadownet.py:224 * 139797950138176 Epoch: 7 cost= 195.335266 seq distance=  0.817676 train accuracy=  0.038569
+INFO: 04-15 07:18:06: train_shadownet.py:224 * 139797950138176 Epoch: 8 cost= 210.584290 seq distance=  0.853546 train accuracy=  0.022830
+INFO: 04-15 07:18:29: train_shadownet.py:224 * 139797950138176 Epoch: 9 cost= 185.785126 seq distance=  0.803801 train accuracy=  0.050934
+INFO: 04-15 07:18:52: train_shadownet.py:224 * 139797950138176 Epoch: 10 cost= 207.650864 seq distance=  0.866097 train accuracy=  0.017933
+INFO: 04-15 07:20:26: train_shadownet.py:182 * 140543032956736 Restore model from model/CRNN/model/shadownet/shadownet_-40
+INFO: 04-15 07:20:26: tf_logging.py:110 * 140543032956736 Restoring parameters from model/CRNN/model/shadownet/shadownet_-40
+INFO: 04-15 07:20:49: train_shadownet.py:224 * 140543032956736 Epoch: 1 cost= 204.758911 seq distance=  0.789287 train accuracy=  0.049145
+INFO: 04-15 07:21:12: train_shadownet.py:224 * 140543032956736 Epoch: 2 cost= 176.418777 seq distance=  0.835371 train accuracy=  0.027413
+INFO: 04-15 07:21:35: train_shadownet.py:224 * 140543032956736 Epoch: 3 cost= 200.557465 seq distance=  0.828158 train accuracy=  0.034653
+INFO: 04-15 07:21:58: train_shadownet.py:224 * 140543032956736 Epoch: 4 cost= 214.397278 seq distance=  0.805841 train accuracy=  0.051295
+INFO: 04-15 07:22:21: train_shadownet.py:224 * 140543032956736 Epoch: 5 cost= 210.147308 seq distance=  0.837617 train accuracy=  0.029448
+INFO: 04-15 07:22:44: train_shadownet.py:224 * 140543032956736 Epoch: 6 cost= 194.393112 seq distance=  0.827384 train accuracy=  0.033174
+INFO: 04-15 07:23:07: train_shadownet.py:224 * 140543032956736 Epoch: 7 cost= 225.637009 seq distance=  0.825874 train accuracy=  0.031286
+INFO: 04-15 07:23:30: train_shadownet.py:224 * 140543032956736 Epoch: 8 cost= 195.794785 seq distance=  0.829480 train accuracy=  0.038752
+INFO: 04-15 07:23:53: train_shadownet.py:224 * 140543032956736 Epoch: 9 cost= 175.635223 seq distance=  0.873596 train accuracy=  0.030490
+INFO: 04-15 07:24:16: train_shadownet.py:224 * 140543032956736 Epoch: 10 cost= 204.150620 seq distance=  0.823356 train accuracy=  0.041346
+INFO: 04-15 07:24:18: train_shadownet.py:182 * 140636356982592 Restore model from model/CRNN/model/shadownet/shadownet_-50
+INFO: 04-15 07:24:18: tf_logging.py:110 * 140636356982592 Restoring parameters from model/CRNN/model/shadownet/shadownet_-50
+INFO: 04-15 07:24:41: train_shadownet.py:224 * 140636356982592 Epoch: 1 cost= 190.010757 seq distance=  0.851871 train accuracy=  0.023922
+INFO: 04-15 07:25:04: train_shadownet.py:224 * 140636356982592 Epoch: 2 cost= 196.757141 seq distance=  0.816804 train accuracy=  0.043854
+INFO: 04-15 07:25:28: train_shadownet.py:224 * 140636356982592 Epoch: 3 cost= 200.382477 seq distance=  0.833992 train accuracy=  0.027904
+INFO: 04-15 07:25:52: train_shadownet.py:224 * 140636356982592 Epoch: 4 cost= 193.619141 seq distance=  0.823501 train accuracy=  0.042691
+INFO: 04-15 07:26:15: train_shadownet.py:224 * 140636356982592 Epoch: 5 cost= 213.998779 seq distance=  0.824601 train accuracy=  0.028775
+INFO: 04-15 07:26:38: train_shadownet.py:224 * 140636356982592 Epoch: 6 cost= 212.960358 seq distance=  0.797874 train accuracy=  0.038535
+INFO: 04-15 07:27:01: train_shadownet.py:224 * 140636356982592 Epoch: 7 cost= 180.341461 seq distance=  0.824619 train accuracy=  0.031277
+INFO: 04-15 07:27:24: train_shadownet.py:224 * 140636356982592 Epoch: 8 cost= 204.937607 seq distance=  0.880032 train accuracy=  0.028022
+INFO: 04-15 07:27:47: train_shadownet.py:224 * 140636356982592 Epoch: 9 cost= 197.391113 seq distance=  0.807519 train accuracy=  0.050498
+INFO: 04-15 07:28:10: train_shadownet.py:224 * 140636356982592 Epoch: 10 cost= 190.792099 seq distance=  0.885922 train accuracy=  0.012367
