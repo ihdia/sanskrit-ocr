@@ -1,4 +1,0 @@
-distance
-numpy
-six
-pillow
