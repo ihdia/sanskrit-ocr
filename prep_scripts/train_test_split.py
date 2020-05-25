@@ -1,69 +1,41 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-import pandas as pd 
 import numpy as np 
 import os
 import random
-import time
 import sys
 import math
 
-import os
-import pandas as pd
-import numpy as np
+if len(sys.argv)<4:
+   sys.exit("Format: python prep_scripts/train_test_split.py train_split val_split test_split")
 
-DIRECTORY_PATH = os.getcwd()+"/csv_data"
+train_split, val_split, test_split = float(sys.argv[1]), float(sys.argv[2]), float(sys.argv[3])
 
-df = pd.DataFrame(columns=['Location','Annotations'])
+with open("label_data/annot_real.txt") as f_real:
+   real_lines = f_real.readlines()
 
-url_ct = 1
-for subdir, dirs, files in os.walk(DIRECTORY_PATH):
-   index = subdir.rfind('/')
-   book = subdir[index+1:]
-   for f in files:
-      if f.endswith('_linec.csv'):
-         df2 = pd.read_csv(subdir+'/'+f)
-         if df2.empty==False:
-            for a, b in zip(df2["URL Name"], df2["Annotations"]):
-               if os.path.exists(os.getcwd()+'/line_images/'+book+"/"+f[0:f.find('_')]+'/'+str(a)+".jpg"):
-                  df.loc[url_ct-1] = [os.getcwd()+'/line_images/'+book+"/"+f[0:f.find('_')]+'/'+str(a)+".jpg", b]
-                  url_ct = url_ct + 1
-df.to_csv(os.getcwd()+"/label_data/real_annot.csv", index=False)
-#Perform this shuffle the dataset
-df = pd.read_csv(os.getcwd()+"/label_data/"+'real_annot.csv')
-print(df.shape)
-df = df.sample(frac=1).reset_index(drop=True)
-print(df.shape)
-df.to_csv(os.getcwd()+"/label_data/"+"real_annot_sampled.csv", index=False)
-
-df = pd.read_csv(os.getcwd()+"/label_data/"+"real_annot_sampled.csv")
-
-leng = df.shape[0]
-print(leng)
-train_length =int(0.70*leng)
-test_length = int(0.20*leng)
-val_length = leng-train_length-test_length
-
-train = df.iloc[0:train_length]
-test = df.iloc[train_length:train_length+test_length]
-val = df.iloc[train_length+test_length:]
+random.shuffle(real_lines)
+train_lines = real_lines[0:int(train_split*len(real_lines))]
+val_lines = real_lines[len(train_lines):len(train_lines)+int(val_split*len(real_lines))]
+test_lines = real_lines[len(train_lines)+int(val_split*len(real_lines)):]
 
 
-
-with open("label_data/annot_realTrain.txt","w") as f_train:
-	for a, b in zip(train["Location"], train["Annotations"]):
-		f_train.write(a+" "+b.strip())
-		f_train.write("\n")
-	
-with open("label_data/annot_realTest.txt","w") as f_test:
-   for a, b in zip(test["Location"], test["Annotations"]):
-       f_test.write(a+" "+b.strip())
-       f_test.write("\n")
-
-with open("label_data/annot_realValidation.txt","w") as f_val:
-   for a, b in zip(val["Location"], val["Annotations"]):
-       f_val.write(a+" "+b.strip())
-       f_val.write("\n")
+fx = open("label_data/annot_realTrain.txt", "w")
+for line in train_lines:
+   line = line.rstrip()
+   fx.write(line)
+   fx.write('\n')
+fx.close()
+fx = open("label_data/annot_realValidation.txt", "w")
+for line in val_lines:
+   line = line.rstrip()
+   fx.write(line)
+   fx.write('\n')
+fx.close()
+fx = open("label_data/annot_realTest.txt", "w")
+for line in test_lines:
+   line = line.rstrip()
+   fx.write(line)
+   fx.write('\n')
+fx.close()
 
 with open("label_data/annot_realTrain.txt") as f_train:
    train_lines = f_train.readlines()    

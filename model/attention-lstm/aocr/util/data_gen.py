@@ -25,7 +25,7 @@ class DataGen(object):
     x = []
     for i in range(2304,2432):
         x.append(chr(i))
-    y = list(',.0123456789-_|')
+    y = list(',.0123456789-_|#')
     CHARMAP = ['', '', ''] + [chr(i) for i in range(2304,2432)] + y
 
     @staticmethod

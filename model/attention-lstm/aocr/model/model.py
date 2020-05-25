@@ -399,7 +399,7 @@ class Model(object):
             except Exception as e:
                 skipped_counter += 1
                 logging.info("Step {} failed, batch skipped." +
-                             " Total skipped: {}".format(current_step, skipped_counter))
+                             "Total skipped: {}".format(current_step, skipped_counter))
                 logging.error(
                     "Step {} failed. Exception details: {}".format(current_step, str(e)))
                 continue

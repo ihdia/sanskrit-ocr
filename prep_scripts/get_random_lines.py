@@ -56,8 +56,8 @@ fontname = sys.argv[1] if len(sys.argv) >= 2 else "Sans"
 
 
 pathf = "line_images/"
-# FONT_TYPE = ["Dekko", "Shobhika", "Yatra One", "Yantramanav", "Kalam", "Utsaah", "Tillana", "Teko", "Sura", "Siddhanta", "Sarpanch", "Sarala", "Sarai", "Sanskrit 2003", "Sanskrit Text", "Samyak Devanagari", "Samanata", "SakalBharati",  "Sahadeva", "Rozha One", "Rhodium Libre", "Rajdhani", "Poppins", "Nirmala UI", "Nakula", "Modak", "Lohit Devanagari", "Kokila", "Khand","Karma", "Hind", "Halant", "GIST-DVOTMohini", "GIST-DVOTKishor", "GISTOT-BRXVinit", "GISTOT-DGRDhruv", "Eczar", "Ek Mukta", "Gargi", "Chandas", "Biryani", "Asar", "Arya", "Amiko", "Amita", "Aparajita", "Akshar Unicode","Laila", "Kurale", "Noto Sans", "Mukta", "Gotu", "Pragati Narrow", "Baloo 2", "Baloo", "Martel Sans", "Khula", "Jaldi", "Glegoo", "Palanquin", "Palanquin Dark", "Cambay", "Kadwa", "Vesper Libre", "Sumana", "Ranga", "Sahitya"]
-FONT_TYPE = ["Dekko", "Shobhika"]
+FONT_TYPE = ["Dekko", "Shobhika", "Yatra One", "Yantramanav", "Kalam", "Utsaah", "Tillana", "Teko", "Sura", "Siddhanta", "Sarpanch", "Sarala", "Sarai", "Sanskrit 2003", "Sanskrit Text", "Samyak Devanagari", "Samanata", "SakalBharati",  "Sahadeva", "Rozha One", "Rhodium Libre", "Rajdhani", "Poppins", "Nirmala UI", "Nakula", "Modak", "Lohit Devanagari", "Kokila", "Khand","Karma", "Hind", "Halant", "GIST-DVOTMohini", "GIST-DVOTKishor", "GISTOT-BRXVinit", "GISTOT-DGRDhruv", "Eczar", "Ek Mukta", "Gargi", "Chandas", "Biryani", "Asar", "Arya", "Amiko", "Amita", "Aparajita", "Akshar Unicode","Laila", "Kurale", "Noto Sans", "Mukta", "Gotu", "Pragati Narrow", "Baloo 2", "Baloo", "Martel Sans", "Khula", "Jaldi", "Glegoo", "Palanquin", "Palanquin Dark", "Cambay", "Kadwa", "Vesper Libre", "Sumana", "Ranga", "Sahitya"]
+# FONT_TYPE = ["Dekko", "Shobhika"]
 print(sorted(FONT_TYPE))
 print(len(FONT_TYPE))
 if not os.path.exists(os.getcwd()+"/label_data"):
