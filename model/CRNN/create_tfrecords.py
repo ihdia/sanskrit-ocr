@@ -154,12 +154,12 @@ with open(inputFile) as f:
 
 content = [x.strip() for x in content]
 for ln in content:
-	flname = ln.split("\t",1)[0]#.split("/")[-1]
-	if len(ln.split("\t",1)) == 2:
-		filename_pairs.append((''+flname ,ln.split("\t",1)[1]))
-		maxLineLen = max(maxLineLen, len(ln.split("\t",1)[1]))
+	flname = ln.split(" ",1)[0]#.split("/")[-1]
+	if len(ln.split(" ",1)) == 2:
+		filename_pairs.append((''+flname ,ln.split(" ",1)[1]))
+		maxLineLen = max(maxLineLen, len(ln.split(" ",1)[1]))
 		cnt += 1
-	elif len(ln.split("\t",1)) == 1:
+	elif len(ln.split(" ",1)) == 1:
 		cnt += 1
 		filename_pairs.append((''+flname ,""))
 print(maxLineLen)
