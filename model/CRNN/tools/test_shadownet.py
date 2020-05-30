@@ -51,7 +51,7 @@ def test_shadownet(filename, weights_path, is_vis=False, is_recursive=True):
     :param is_recursive:
     :return:
     """
-    is_recusive=True
+    is_recursive=True
     # Initialize the record decoder
     decoder = data_utils.TextFeatureIO().reader
     images_t, labels_t, imagenames_t = decoder.read_features(os.getcwd()+'/model/CRNN/data/tfReal/'+filename, num_epochs=None)
