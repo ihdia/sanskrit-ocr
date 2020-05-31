@@ -15,6 +15,24 @@ __C = edict()
 
 cfg = __C
 
+__C.ARCH = edict()
+
+# Number of units in each LSTM cell
+__C.ARCH.HIDDEN_UNITS = 256
+# Number of stacked LSTM cells
+__C.ARCH.HIDDEN_LAYERS = 2
+# Sequence length.  This has to be the width of the final feature map of the CNN, which is input size width / 4
+# __C.ARCH.SEQ_LENGTH = 70  # cn dataset
+__C.ARCH.SEQ_LENGTH = 200  
+# Width x height into which training / testing images are resized before feeding into the network
+# __C.ARCH.INPUT_SIZE = (280, 32)  # cn dataset
+__C.ARCH.INPUT_SIZE = (512, 32)  
+# Number of channels in images
+__C.ARCH.INPUT_CHANNELS = 3
+# Number character classes
+# __C.ARCH.NUM_CLASSES = 5825  # cn dataset
+__C.ARCH.NUM_CLASSES = 148 
+
 # Train options
 __C.TRAIN = edict()
 
