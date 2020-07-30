@@ -201,7 +201,7 @@ def padimage(prop):
 		#h,w,_ = prop.shape
 		#hnew = 32#
 		hnew  = 32#66
-		prop = cv2.resize(prop, (w*hnew//h,hnew))# Agam this might make width go above 600 and then remaining code might create problems, in that case refer to comment on line 177
+		prop = cv2.resize(prop, (w*hnew//h,hnew))
 		h,w,_ = prop.shape
 		flag = 1
 	max_wd = 1000
