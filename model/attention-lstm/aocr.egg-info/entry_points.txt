@@ -1,0 +1,3 @@
+[console_scripts]
+aocr = aocr.__main__:main
+

@@ -3,6 +3,24 @@ import sys
 import json
 from jiwer import wer
 
+
+def select(arr,i):
+    han4 = [2535,1040, 8221, 2985, 3006, 2792, 8377, 8226, 8220, 8216, 2798, 2965, 3585, 8211, 8212, 1041, 3594, 8204, 7386, 8205, 8211, 8217, 8220,8221]
+    han2 = [93, 61, 42, 47, 58, 96, 63, 40, 37, 41, 59, 34, 43, 33,99]
+
+    if out[i:i+5]=='43251' and out[i:i+5]=='65279':
+        out_word = out_word+chr(int(out[i:i+5]))
+    elif arr[i:i+2]=='23' or arr[i:i+2]=='24' or int(arr[i:i+4]) in han4: #10,82,29,30,27,83,35
+        return 4
+    elif arr[i:i+3] == '124' or arr[i:i+3] == '183':
+        return 3
+
+    elif arr[i:i+2]<='96' and arr[i:i+2]>='32':
+        return 2
+    else:
+        return -1
+    
+
 def levenshteinDistance(s1, s2):
     if len(s1) > len(s2):
         s1, s2 = s2, s1
@@ -118,44 +136,27 @@ if lines[0].find('Step')!=-1:
                 out_word=""
                 i = 0
                 while i < len(out):
-                    if out[i:i+2]=='23' or out[i:i+2]=='24':
-                        out_word = out_word+chr(int(out[i:i+4]))
-                        i = i+4
-                    elif out[i:i+2]=='32' or out[i:i+2]=='35' or out[i:i+2]=='95' or out[i:i+2]=='46' or out[i:i+2]=='44' or out[i:i+2]=='45' or (out[i:i+2]<='57' and out[i:i+2]>='48'):
-                        out_word = out_word+chr(int(out[i:i+2]))
-                        i = i+2
-                    elif out[i:i+3]=='124':
-                        out_word = out_word+chr(int(out[i:i+3]))
-                        i = i+3
+                    shift = select(out,i)
+                    if (shift!=-1):
+                        out_word = out_word + chr(int(out[i:i+shift]))
+                        i = i+shift
                     else:
-                        # print(out[i:])
-                        break
-                    # else:
-                    #     out_word = out_word+chr(int(out[i]))
-                    #     i = i+1
+                        i = i+1
+                        out_word = out_word + " "
+                       
                 
                 
                 gt_word = ""
                 i = 0
                 while i < len(gt):
-                    if gt[i:i+2]=='23' or gt[i:i+2]=='24':
-                        gt_word = gt_word+chr(int(gt[i:i+4]))
-                        i = i+4
-                    elif gt[i:i+2]=='32' or gt[i:i+2]=='35' or gt[i:i+2]=='95' or gt[i:i+2]=='46' or gt[i:i+2]=='44' or gt[i:i+2]=='45' or (gt[i:i+2]<='57' and gt[i:i+2]>='48'):
-                        # print(k)
-                        # print(gt[i:i+2])
-                        gt_word = gt_word+chr(int(gt[i:i+2]))
-                        i = i+2
-                    elif gt[i:i+3]=='124':
-                        gt_word = gt_word+chr(int(gt[i:i+3]))
-                        i = i+3
+                    gtshift = select(gt,i)
+                    if (gtshift!=-1):
+                        gt_word = gt_word + chr(int(gt[i:i+gtshift]))
+                        i = i + gtshift
                     else:
-                        # print(gt[i:])
-                        break
-                    # else:
-                    #     gt_word = gt_word+chr(int(gt[i]))
-                    #     i = i+1
-                
+                        i = i+1
+                        out_word = out_word + " "
+                        
                 
                 gt_val.append(gt_word)
                 out_val.append(out_word)
@@ -167,9 +168,9 @@ if lines[0].find('Step')!=-1:
     print(len(get_step))
     print(len(get_wer))
     print(get_step)
-    print(get_wer)
-    print(get_cer)
-    print(get_loss)
+    print("WER - list",get_wer)
+    print("CER - list",get_cer)
+    print("Loss - list",get_loss)
     plt_var = {"loss" : get_loss,"step" : get_step, "wer" : get_wer, "cer" : get_cer}
     json_object = json.dumps(plt_var, indent = 4)
     with open("./visualize/output.json", "w") as outfile:
@@ -202,41 +203,25 @@ else:
             out_word=""
             i = 0
             while i < len(out):
-                if out[i:i+2]=='23' or out[i:i+2]=='24':
-                    out_word = out_word+chr(int(out[i:i+4]))
-                    i = i+4
-                elif out[i:i+2]=='32' or out[i:i+2]=='35' or out[i:i+2]=='95' or out[i:i+2]=='46' or out[i:i+2]=='44' or out[i:i+2]=='45' or (out[i:i+2]<='57' and out[i:i+2]>='48'):
-                    out_word = out_word+chr(int(out[i:i+2]))
-                    i = i+2
-                elif out[i:i+3]=='124':
-                    out_word = out_word+chr(int(out[i:i+3]))
-                    i = i+3
+                shift = select(out,i)
+                if (shift!=-1):
+                    out_word = out_word + chr(int(out[i:i+shift]))
+                    i = i+shift
                 else:
-                    # print(out[i:])
-                    break
-                # else:
-                #     out_word = out_word+chr(int(out[i]))
-                #     i = i+1
-            
-            
+                    i = i+1
+                    out_word = out_word + " "
+                    
             gt_word = ""
             i = 0
             while i < len(gt):
-                if gt[i:i+2]=='23' or gt[i:i+2]=='24':
-                    gt_word = gt_word+chr(int(gt[i:i+4]))
-                    i = i+4
-                elif gt[i:i+2]=='32' or gt[i:i+2]=='35' or gt[i:i+2]=='95' or gt[i:i+2]=='46' or gt[i:i+2]=='44' or gt[i:i+2]=='45' or (gt[i:i+2]<='57' and gt[i:i+2]>='48'):
-                    gt_word = gt_word+chr(int(gt[i:i+2]))
-                    i = i+2
-                elif gt[i:i+3]=='124':
-                    gt_word = gt_word+chr(int(gt[i:i+3]))
-                    i = i+3
+                gtshift = select(gt,i)
+                if (gtshift!=-1):
+                    gt_word = gt_word + chr(int(gt[i:i+gtshift]))
+                    i = i + gtshift
                 else:
-                    # print(gt[i:])
-                    break
-                # else:
-                #     gt_word = gt_word+chr(int(gt[i]))
-                #     i = i+1
+                    i = i+1
+                    out_word = out_word + " "
+                    
             out_val.append(out_word)
             gt_val.append(gt_word)
                 
