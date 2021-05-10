@@ -48,8 +48,6 @@ The code is written in **tensorflow** framework.
 
 To download our best models, kindly visit this page.
 
-## How to get the code to run?
-
 ### Setup:
 
 In the model/attention-lstm directory, run the following commands:
@@ -106,6 +104,10 @@ CUDA_VISIBLE_DEVICES=0 aocr test /path/to/test.tfrecords --batch-size <batch-siz
 ```
 
 *Note: If you want to test multiple checkpoints which are evenly spaced (numbering wise), use the method described in the [validation](#Validate) section.*
+
+### Computing Error Rates:
+
+
 
 
 ## CNN-RNN:

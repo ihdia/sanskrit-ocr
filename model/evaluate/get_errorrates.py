@@ -74,9 +74,14 @@ def total_ser(gt_lines, pred_lines):
         ser_sum += err
     return 100*ser_sum/total_lines
 
-with open("./model/attention-lstm/logs/val_preds.txt", "r") as f:
-    lines = f.readlines()
-
+if len(sys.argv)< 2:
+    print('Usage : python model/evaluate/get_errorates.py <path_to_predicted_txt_file>')
+fileName = sys.argv[1]
+try:
+    with open(fileName, "r") as f:
+        lines = f.readlines()
+except:
+    print('Either '+fileName+' does not exist or you have provided the wrong path. Kindly re-check.')
 # print(lines)
 s=0
 get_step = []
