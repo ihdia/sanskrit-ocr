@@ -185,14 +185,14 @@ To compute the CER and WER of the predictions, run the following command:
 
 **Validation:**
 ```
-python model/evaluate/get_errorrates_crnn.py validate <path_to_predicted_file>
+python model/evaluate/get_errorrates_crnn.py <path_to_predicted_file>
 
 ```
 
 **Test:**
 ```
-python model/evaluate/get_errorrates_crnn.py test <path_to_predicted_file>
+python model/evaluate/get_errorrates_crnn.py <path_to_predicted_file>
 
 ```
 
-**ex:** `python model/evaluate/get_errorrates_crnn.py test model/CRNN/logs/test_preds_final.txt`
+**ex:** `python model/evaluate/get_errorrates_crnn.py model/CRNN/logs/test_preds_final.txt`

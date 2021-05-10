@@ -58,17 +58,17 @@ def total_ser(gt_lines, pred_lines):
     return 100*ser_sum/total_lines
 
 if len(sys.argv)<2:
-    sys.exit("Format python model/CRNN/get_errorrates_crnn.py <val or test>")
+    sys.exit("Format python model/CRNN/get_errorrates_crnn.py filename")
 
-type_ = sys.argv[1]
 
-if type_=="validate":
-    file_ = './model/CRNN/logs/val_preds.txt'
-else:
-    file_ = './model/CRNN/logs/test_preds.txt'
+
+
+file_ = sys.argv[1]
 
 with open(file_) as f:
     lines = f.readlines()
+
+
 
 
 get_step = []
