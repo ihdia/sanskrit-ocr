@@ -107,6 +107,16 @@ CUDA_VISIBLE_DEVICES=0 aocr test /path/to/test.tfrecords --batch-size <batch-siz
 
 ### Computing Error Rates:
 
+To compute the CER and WER of the predictions, run the following command:
+
+```
+python ./model/evaluate/get_errorrates.py <predicted_file_name>
+
+```
+
+**ex:** `python model/evaluate/get_errorrates.py val_preds.txt`
+
+The results of error rates will be written to a file `output.json` in the `visualize` directory.
 
 
 
