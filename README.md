@@ -1,6 +1,6 @@
 # sanskrit-ocr
 
-*Note: This branch contains code for IndicOCR-v2. For IndicOCR-v1, kindly visit the `master` branch.*
+*Note: This branch contains code for IndicOCR-v2. For IndicOCR-v1, kindly visit the [this](https://github.com/ihdia/sanskrit-ocr) branch.*
 
 
 ----------------------------------------------------------------------------
