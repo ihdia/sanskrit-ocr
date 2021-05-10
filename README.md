@@ -5,7 +5,7 @@
 
 ----------------------------------------------------------------------------
 
-This repository contains code for various OCR models for classical Sanskrit Document Images. For a quick understanding of how to get the **IndicOCR** and **CNN-RNN** up and running, kindly continue to read this Readme. For more detailed instructions, visit our  [Wiki](https://github.com/ihdia/sanskrit-ocr/wiki) page.
+This repository contains code for various OCR models meant to process classical Sanskrit Document Images. For a quick understanding of how to get the **IndicOCR** and **CNN-RNN** up and running, kindly continue to read this Readme. For more detailed instructions, visit our  [Wiki](https://github.com/ihdia/sanskrit-ocr/wiki) page.
 
 The IndicOCR model and CNN-RNN models are best run on a GPU.
 
@@ -39,6 +39,11 @@ The following table shows the comparitive results for the IndicOCR-v2 model with
 8 | new | Tesseract (Sanskrit)| --  |21.06 |62.34| 
 
 ## IndicOCR-v2:
+
+### Quick-Setup:
+
+**Prepare Image:**
+
 
 ### Details:
 
