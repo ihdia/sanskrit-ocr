@@ -168,30 +168,31 @@ python model/CRNN/train.py <training tfrecords filename> <train_epochs> <path_to
 To validate many checkpoints, run 
 
 ```
-python ./model/evaluate/crnn_predictions.py <initial_step> <final_step> <steps_per_checkpoint>
+python ./model/evaluate/crnn_predictions.py <tfrecords_file_name> <initial_step> <final_step> <steps_per_checkpoint> <out_file>
 ```
 
-This will create a `val_preds.txt` file in the model/attention-lstm/logs folder.
+This will create a `out_file` in the model/CRNN/logs folder.
+
+*Note: the `tfrecords_file_name` should be relative to the `model/CRNN/data/tfReal/` directory.*
 
 ### Test
 
-To test a single checkpoint, run the following command:
-
-```
-CUDA_VISIBLE_DEVICES=0 aocr test /path/to/test.tfrecords --batch-size <batch-size> --max-width <max-width> --max-height <max-height> --max-prediction <max-predicted-label-length> --model-dir ./modelss
-```
-
-*Note: If you want to test multiple checkpoints which are evenly spaced (numbering wise), use the method described in the [validation](#Validate) section.*
+Same as above
 
 ### Computing Error Rates:
 
 To compute the CER and WER of the predictions, run the following command:
 
+**Validation:**
 ```
-python ./model/evaluate/get_errorrates.py <predicted_file_name>
+python model/evaluate/get_errorrates_crnn.py validate <path_to_predicted_file>
 
 ```
 
-**ex:** `python model/evaluate/get_errorrates.py val_preds.txt`
+**Test:**
+```
+python model/evaluate/get_errorrates_crnn.py test <path_to_predicted_file>
 
-The results of error rates will be written to a file `output.json` in the `visualize` directory.
+```
+
+**ex:** `python model/evaluate/get_errorrates_crnn.py test model/CRNN/logs/test_preds_final.txt`
