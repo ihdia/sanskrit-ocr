@@ -204,4 +204,33 @@ python model/evaluate/get_errorrates_crnn.py <path_to_predicted_file>
 
 *Note: To know how to get results for Tessaract and Google-OCR kindly visit our [Wiki](https://github.com/ihdia/sanskrit-ocr/wiki) page.*
 
+----------------------------------------------------
 
+# Other-Analysis:
+
+### WA-ECR Plot:
+
+To gain a better insight into performance, we compute the word-averaged erroneous character rate (WA-ECR). This is defined as follows: 
+
+**WA-ECR:** = E/N
+
+Where:
+
+- E: number of erroneous characters across all words of length L
+- N : number of L length words in the test set.
+
+
+----------------------------------------------------
+
+![Paper Results](waecr_v1.png)
+
+Figure: Distribution of word-averaged erroneous character rate (WA-ECR)  as a function of length, for different models. The lower WA-ECR the better. The test words histogram in terms of word lengths can also be seen in the plot (red dots, log scale).
+
+
+-------------------------------------------------------
+
+### Sample Results:
+
+![Paper Results](SampleResults_v1.jpg)
+
+Figure: Qualitative results for different models. Errors relative to ground truth are highlighted in red. Blue highlighting indicates text missing from at least one of the OCRs. A larger amount of blue within a line for an OCR indicates better coverage relative to others OCRs. Smaller amount of red indicates absence of errors.
