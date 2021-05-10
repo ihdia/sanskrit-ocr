@@ -27,12 +27,13 @@ year = {2020}
 
 The following table shows the comparitive results for the IndicOCR-v2 model with other state of the art models.
 
+
 |Row |**Dataset**|**Model**|Training Config| CER (%)| WER (%)|
 |----|-------------|--------|----------|-----|----|
-1 | new | IndicOCR-v2 | C3:mix training + real finetune |3.86 |13.86|
+1 | new | **IndicOCR-v2** | C3:mix training + real finetune | 3.86 | **13.86**|
 2 | new | IndicOCR-v2 | C1:mix training  |4.77|16.84|
 3 | new | CNN-RNN | C3:mix training + real finetune |3.77| 14.38|
-4 | new | CNN-RNN | C1:mix training | 3.67| 13.86|
+4 | new | CNN-RNN | C1:mix training | **3.67**| **13.86** |
 5 | new | Google-OCR | -- | 6.95| 34.64| 
 6 | new | Ind.senz | -- | 20.55| 57.92| 
 7 | new | Tesseract (Devanagiri)| --  |13.23 |52.75| 
@@ -194,9 +195,8 @@ python model/evaluate/get_errorrates_crnn.py <path_to_predicted_file>
 
 **ex:** `python model/evaluate/get_errorrates_crnn.py model/CRNN/logs/test_preds_final.txt`
 
+### Creating Synthetic Data, Obtaining results for Tesseract and Google-OCR etc.
 
-----------------------------------------------------------------------------
-
-*Note: To know how to get results for Tessaract and Google-OCR kindly visit our [Wiki](https://github.com/ihdia/sanskrit-ocr/wiki) page.*
+Visit our [Wiki](https://github.com/ihdia/sanskrit-ocr/wiki) page.
 
 
