@@ -25,20 +25,21 @@ year = {2020}
 
 # Results:
 
-The following table shows the comparitive results for the IndicOCR-v2 model with other state of the art models.
+The following table shows the comparitive results for the IndicOCR-v1 model with other state of the art models.
 
 |Row |**Dataset**|**Model**|Training Config| CER (%)| WER (%)|
 |----|-------------|--------|----------|-----|----|
-1 | new | IndicOCR-v2 | C3:mix training + real finetune |3.86 |13.86|
-2 | new | IndicOCR-v2 | C1:mix training  |4.77|16.84|
-3 | new | CNN-RNN | C3:mix training + real finetune |3.77| 14.38|
-4 | new | CNN-RNN | C1:mix training | 3.67| 13.86|
-5 | new | Google-OCR | -- | 6.95| 34.64| 
-6 | new | Ind.senz | -- | 20.55| 57.92| 
-7 | new | Tesseract (Devanagiri)| --  |13.23 |52.75| 
-8 | new | Tesseract (Sanskrit)| --  |21.06 |62.34| 
+1 | old | Attention LSTM| C3:mix training + real finetune | **3.71** | **15.97**  
+2 | old | Attention LSTM| C2:synth. training + real finetune | 4.59 | 17.97
+3 | old | Attention LSTM| C1:mix training | 5.18 | 19.14
+4 | old | CNN-RNN | C3:mix training + real finetune | 4.72 | 22.53
+5 | old | CNN-RNN | C2:synth. training + real finetune | 4.78 | 22.97
+6 | old | CNN-RNN | C1:mix training | 4.83 | 23.04
+7 | old | Ind.senz|  -- | 25.66 | 40.81 
+8 | old | Google OCR| -- | 12.90 | 40.80 
+9 | old | Tesseract| -- | 17.96 | 69.89 
 
-## IndicOCR-v2:
+## IndicOCR-v1:
 
 ### Quick-Setup:
 
