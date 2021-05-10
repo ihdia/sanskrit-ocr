@@ -111,7 +111,6 @@ To compute the CER and WER of the predictions, run the following command:
 
 ```
 python ./model/evaluate/get_errorrates.py <predicted_file_name>
-
 ```
 
 **ex:** `python model/evaluate/get_errorrates.py val_preds.txt`
@@ -186,13 +185,18 @@ To compute the CER and WER of the predictions, run the following command:
 **Validation:**
 ```
 python model/evaluate/get_errorrates_crnn.py <path_to_predicted_file>
-
 ```
 
 **Test:**
 ```
 python model/evaluate/get_errorrates_crnn.py <path_to_predicted_file>
-
 ```
 
 **ex:** `python model/evaluate/get_errorrates_crnn.py model/CRNN/logs/test_preds_final.txt`
+
+
+----------------------------------------------------------------------------
+
+*Note: To know how to get results for Tessaract and Google-OCR kindly visit our [Wiki](https://github.com/ihdia/sanskrit-ocr/wiki) page.*
+
+
