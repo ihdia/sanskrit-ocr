@@ -47,7 +47,10 @@ The code is written in **tensorflow** framework.
 
 ### Pre-Trained Models:
 
-To download our best models, kindly visit this page.
+- Download pre-trained C1 models from [here](https://drive.google.com/drive/folders/1egUWx0049rypDjLEmloog1FJIxgzNJUJ?usp=sharing)
+
+- Download pre-trained C3 models from [here](https://drive.google.com/drive/folders/1g6QZVQBWWajmQ9kGGyZ5luw5yx4Kg0mL?usp=sharing)
+
 
 ### Setup:
 
@@ -199,4 +202,29 @@ python model/evaluate/get_errorrates_crnn.py <path_to_predicted_file>
 
 Visit our [Wiki](https://github.com/ihdia/sanskrit-ocr/wiki) page.
 
+----------------------------------------------------
+
+# Other-Analysis:
+
+### WA-ECR Plot:
+
+To gain a better insight into performance, we compute the word-averaged erroneous character rate (WA-ECR). This is defined as follows: 
+
+**WA-ECR:** = E/N
+
+Where:
+
+- E: number of erroneous characters across all words of length L
+- N : number of L length words in the test set.
+
+
+![Paper Results](wa-ecr-final.png)
+
+Figure: Distribution of word-averaged erroneous character rate (WA-ECR)  as a function of length, for different models. The lower WA-ECR the better. The test words histogram in terms of word lengths can also be seen in the plot (red dots, log scale).
+
+### Sample Results:
+
+![Paper Results](SampleResults_v2.jpg)
+
+Figure: Qualitative results for different models. Errors relative to ground truth are highlighted in red. Blue highlighting indicates text missing from at least one of the OCRs. A larger amount of blue within a line for an OCR indicates better coverage relative to others OCRs. Smaller amount of red indicates absence of errors.
 
