@@ -1,0 +1,1 @@
+Create the charset jsons for your model as described in the `get_json.py` file.

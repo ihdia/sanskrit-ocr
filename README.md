@@ -118,6 +118,80 @@ python ./model/evaluate/get_errorrates.py <predicted_file_name>
 
 The results of error rates will be written to a file `output.json` in the `visualize` directory.
 
-
-
 ## CNN-RNN:
+
+### Details:
+
+The code is written in **tensorflow** framework.
+
+### Pre-Trained Models:
+
+To download the best CNN-RNN model, kindly visit this page.
+
+### Setup:
+
+In the model/CNN-RNN directory, run the following commands:
+```
+create conda create -n crnn python=3.6.10
+conda activate crnn
+conda install pip
+pip install -r requirements.txt
+```
+
+#### tfrecords creation:
+
+Make sure to have/create a `.txt` file with every line of the file in the following format:
+
+`path/to/image<space>annotation`
+
+**ex:** `/user/sanskrit-ocr/datasets/train/1.jpg I am the annotated text`
+
+```
+python model/CRNN/create_tfrecords.py /path/to/.txt/file ./model/CRNN/data/tfReal/data.tfrecords
+```
+
+### Train:
+
+To train the `data.tfrecords` file created as described above, run the following command.
+
+```
+python model/CRNN/train.py <training tfrecords filename> <train_epochs> <path_to_previous_saved_model> <steps-per_checkpoint>
+```
+**ex:** `python ./model/CRNN/train.py train_feature.tfrecords 20 model/CRNN/model/shadownet/shadownet_-40 200`
+
+*Note: If you are training from scratch just set the `<path_to_previous_saved_model>` arguement to 0.*
+
+**ex:** `python model/CRNN/train.py data.tfrecords 100 0 <steps-per_checkpoint>`
+
+### Validate:
+
+To validate many checkpoints, run 
+
+```
+python ./model/evaluate/crnn_predictions.py <initial_step> <final_step> <steps_per_checkpoint>
+```
+
+This will create a `val_preds.txt` file in the model/attention-lstm/logs folder.
+
+### Test
+
+To test a single checkpoint, run the following command:
+
+```
+CUDA_VISIBLE_DEVICES=0 aocr test /path/to/test.tfrecords --batch-size <batch-size> --max-width <max-width> --max-height <max-height> --max-prediction <max-predicted-label-length> --model-dir ./modelss
+```
+
+*Note: If you want to test multiple checkpoints which are evenly spaced (numbering wise), use the method described in the [validation](#Validate) section.*
+
+### Computing Error Rates:
+
+To compute the CER and WER of the predictions, run the following command:
+
+```
+python ./model/evaluate/get_errorrates.py <predicted_file_name>
+
+```
+
+**ex:** `python model/evaluate/get_errorrates.py val_preds.txt`
+
+The results of error rates will be written to a file `output.json` in the `visualize` directory.
