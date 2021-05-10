@@ -52,7 +52,7 @@ To download our best models, kindly visit this page.
 
 ### Setup:
 
-In the model/indicOCR directory, run the following commands:
+In the model/attention-lstm directory, run the following commands:
 ```
 create conda create -n indicOCR python=3.6.10
 conda activate indicOCR
@@ -61,7 +61,7 @@ pip install -r requirements.txt
 ```
 
 ### Installation:
-To install the `aocr` (attention-ocr) library, from the model/indicOCR directory, run:
+To install the `aocr` (attention-ocr) library, from the model/attention-lstm directory, run:
 
 ```
 python setup.py install
@@ -87,7 +87,7 @@ To train the `data.tfrecords` file created as described above, run the following
 CUDA_VISIBLE_DEVICES=0 aocr train /path/to/tfrecords/file --batch-size <batch-size> --max-width <max-width> --max-height <max-height> --max-prediction <max-predicted-label-length> --num-epoch <num-epoch>
 ```
 
-### Validation:
+### Validate:
 
 To validate many checkpoints, run 
 
@@ -95,6 +95,17 @@ To validate many checkpoints, run
 python ./model/evaluate/attention_predictions.py <initial_ckpt_no> <final_ckpt_step> <steps_per_checkpoint>
 ```
 
-This will create a `val_preds.txt` file in the model/indicOCR
+This will create a `val_preds.txt` file in the model/attention-lstm/logs folder.
 
 ### Test
+
+To test a single checkpoint, run the following command:
+
+```
+CUDA_VISIBLE_DEVICES=0 aocr test /path/to/test.tfrecords --batch-size <batch-size> --max-width <max-width> --max-height <max-height> --max-prediction <max-predicted-label-length> --model-dir ./modelss
+```
+
+*Note: If you want to test multiple checkpoints which are evenly spaced (numbering wise), use the method described in the [validation](#Validate) section.*
+
+
+## CNN-RNN:
