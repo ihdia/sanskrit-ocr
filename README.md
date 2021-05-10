@@ -218,9 +218,14 @@ Where:
 - N : number of L length words in the test set.
 
 
+----------------------------------------------------
+
 ![Paper Results](wa-ecr-final.png)
 
 Figure: Distribution of word-averaged erroneous character rate (WA-ECR)  as a function of length, for different models. The lower WA-ECR the better. The test words histogram in terms of word lengths can also be seen in the plot (red dots, log scale).
+
+
+-------------------------------------------------------
 
 ### Sample Results:
 
