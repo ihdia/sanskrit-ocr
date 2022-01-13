@@ -18,14 +18,14 @@ Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.0
 kiwisolver==1.1.0
 Markdown==3.2.1
-Pillow==7.0.0
+Pillow==9.0.0
 urllib3==1.22
 PyYAML==3.12
 matplotlib==3.2.0
 natsort==7.0.1
 numpy==1.18.2
 pandas==1.0.1
-Pillow==7.0.0
+Pillow==9.0.0
 protobuf==3.11.3
 pycairo==1.19.1
 pycparser==2.20
