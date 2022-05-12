@@ -49,13 +49,7 @@ def generate(annotations_path, output_path, log_step=5000,
             if f==0:
                 try: 
                     data = plt.imread(img_path)
-                    rows = set([])
-                    columns = set([])
-                    for i in range(data.shape[0]):
-                        for j in range(data.shape[1]):
-                            if data[i][j]<128:
-                                rows.add(i)
-                                columns.add(j)
+                    rows , columns = np.where(data < 128)
 
                     roi = data[min(rows):max(rows)+1, min(columns):max(columns)+1]
                     im = Image.fromarray(roi)
