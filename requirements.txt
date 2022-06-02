@@ -20,7 +20,7 @@ googleapis-common-protos==1.51.0
 google-pasta==0.2.0
 grpcio==1.27.2
 h5py==2.10.0
-html5lib==0.9999999
+html5lib==0.99999999
 idna==2.6
 ipaddress==1.0.17
 ipython==5.5.0
