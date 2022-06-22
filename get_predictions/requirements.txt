@@ -23,7 +23,7 @@ urllib3==1.22
 PyYAML==3.12
 matplotlib==3.2.0
 natsort==7.0.1
-numpy==1.18.2
+numpy==1.22.0
 pandas==1.0.1
 Pillow==7.0.0
 protobuf==3.11.3
