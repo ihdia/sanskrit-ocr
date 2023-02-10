@@ -23,7 +23,7 @@ h5py==2.10.0
 html5lib==0.9999999
 idna==2.6
 ipaddress==1.0.17
-ipython==5.5.0
+ipython==8.10.0
 ipython-genutils==0.2.0
 joblib==0.14.1
 matplotlib==2.2.5
