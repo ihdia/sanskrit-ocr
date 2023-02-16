@@ -41,7 +41,7 @@ tensorflow-estimator==1.14.0
 tensorflow-tensorboard==1.5.1
 termcolor==1.1.0
 webencodings==0.5.1
-Werkzeug==1.0.1
+Werkzeug==2.2.3
 wrapt==1.12.1
 tesseract==0.1.3
 tesserocr==2.5.1
